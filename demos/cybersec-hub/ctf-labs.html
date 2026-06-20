@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CTF & Labs — CyberHub</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="page-content">
+
+  <div class="page-hero">
+    <div class="hero-eyebrow"><span class="dot" style="background:var(--accent-red)"></span>Capture The Flag & Practice Environments</div>
+    <h1 class="page-hero-title"><span class="gradient-text-red">CTF &</span><br>Practice Labs</h1>
+    <p class="page-hero-desc">The best way to learn cybersecurity is by doing it. CTF competitions, practice platforms, and vulnerable lab environments let you build real skills in safe, legal settings.</p>
+    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+      <span class="badge badge-beginner">Beginner</span>
+      <span class="badge badge-intermediate">Intermediate</span>
+      <span class="badge badge-pro">Pro</span>
+    </div>
+  </div>
+
+  <!-- ─── What is a CTF ──────────────────────────────── -->
+  <section class="section" style="padding-top:0">
+    <div class="section-header fade-up">
+      <div class="section-label">Foundation</div>
+      <h2 class="section-title">What is a CTF?</h2>
+    </div>
+    <div class="grid-2">
+      <div class="glass-card no-hover" style="padding:32px">
+        <h3 style="font-size:18px;font-weight:800;margin-bottom:14px;color:var(--accent-red)">Capture The Flag Explained</h3>
+        <p style="color:var(--text-secondary);line-height:1.7;font-size:14.5px;margin-bottom:20px">Capture The Flag (CTF) competitions are cybersecurity contests where participants solve security challenges to find hidden "flags" — usually a text string like <code style="background:var(--glass-bg-hover);padding:2px 6px;border-radius:4px;font-size:13px">FLAG{s0me_s3cr3t_string}</code>. They're completely legal, educational, and the best way to build practical skills.</p>
+        <div class="divider"></div>
+        <h4 style="font-weight:700;margin-bottom:12px">CTF Challenge Categories</h4>
+        <div class="grid-2" style="gap:10px">
+          <div style="background:var(--glass-bg-hover);border-radius:10px;padding:12px"><div style="font-weight:700;font-size:13px;margin-bottom:4px;color:var(--accent-cyan)">🌐 Web</div><div style="font-size:12px;color:var(--text-secondary)">SQLi, XSS, SSRF, authentication bypass, cookie manipulation</div></div>
+          <div style="background:var(--glass-bg-hover);border-radius:10px;padding:12px"><div style="font-weight:700;font-size:13px;margin-bottom:4px;color:var(--accent-purple)">💥 Pwn / Binary</div><div style="font-size:12px;color:var(--text-secondary)">Buffer overflows, heap exploits, format strings, ROP chains</div></div>
+          <div style="background:var(--glass-bg-hover);border-radius:10px;padding:12px"><div style="font-weight:700;font-size:13px;margin-bottom:4px;color:var(--accent-amber)">🔑 Cryptography</div><div style="font-size:12px;color:var(--text-secondary)">RSA, AES, hashing, encoding, classical ciphers, custom crypto</div></div>
+          <div style="background:var(--glass-bg-hover);border-radius:10px;padding:12px"><div style="font-weight:700;font-size:13px;margin-bottom:4px;color:var(--accent-emerald)">🔬 Forensics</div><div style="font-size:12px;color:var(--text-secondary)">File analysis, steganography, pcap analysis, memory dumps</div></div>
+          <div style="background:var(--glass-bg-hover);border-radius:10px;padding:12px"><div style="font-weight:700;font-size:13px;margin-bottom:4px;color:var(--accent-pink)">🔭 Reversing</div><div style="font-size:12px;color:var(--text-secondary)">Disassemble binaries, decompile code, understand algorithms</div></div>
+          <div style="background:var(--glass-bg-hover);border-radius:10px;padding:12px"><div style="font-weight:700;font-size:13px;margin-bottom:4px;color:var(--accent-cyan)">🕵️ OSINT</div><div style="font-size:12px;color:var(--text-secondary)">Open source intelligence, finding hidden information online</div></div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div class="info-panel border-red">
+          <h4 style="font-weight:700;margin-bottom:10px;color:var(--accent-red)">🏆 CTF Competition Formats</h4>
+          <ul class="styled-list">
+            <li><strong>Jeopardy:</strong> Independent challenges worth points. Most common format. Solve any category in any order.</li>
+            <li><strong>Attack/Defence:</strong> Teams attack opponents' services while defending their own. Requires team coordination.</li>
+            <li><strong>King of the Hill:</strong> Take control of a server and hold it against other teams.</li>
+            <li><strong>Mixed:</strong> Combination of Jeopardy and A/D formats. Used in major competitions.</li>
+          </ul>
+        </div>
+        <div class="info-panel border-green">
+          <h4 style="font-weight:700;margin-bottom:10px;color:var(--accent-emerald)">✅ Why CTFs Are Essential</h4>
+          <ul class="styled-list">
+            <li>Legal, safe environment to practice offensive techniques</li>
+            <li>Directly builds skills tested in certifications like OSCP</li>
+            <li>Impressive on resumes — ranked players get recruited</li>
+            <li>Great for finding security community and teammates</li>
+            <li>Teaches problem-solving and research skills</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Platforms ─────────────────────────────────── -->
+  <section class="section">
+    <div class="section-header fade-up">
+      <div class="section-label">Practice Platforms</div>
+      <h2 class="section-title">Where to Practice</h2>
+    </div>
+    <div data-tabs>
+      <div class="tab-group">
+        <button class="tab-btn active" data-tab="beginner-plat">🌱 Beginner</button>
+        <button class="tab-btn" data-tab="intermediate-plat">📈 Intermediate</button>
+        <button class="tab-btn" data-tab="pro-plat">⚡ Pro</button>
+        <button class="tab-btn" data-tab="blue-plat">🛡 Blue Team</button>
+      </div>
+
+      <div class="tab-panel active" data-panel="beginner-plat">
+        <div class="grid-auto stagger-children">
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-green">🎮</div><span class="badge badge-beginner">Beginner</span></div><div class="resource-card-title">TryHackMe</div><div class="resource-card-desc">Guided, gamified learning with browser-based VMs. Structured learning paths, beginner rooms, and no setup required. The absolute best starting platform. Free and premium tiers.</div><a href="https://tryhackme.com" class="resource-card-link">tryhackme.com →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-green">🏫</div><span class="badge badge-beginner">Beginner</span></div><div class="resource-card-title">PicoCTF</div><div class="resource-card-desc">Carnegie Mellon's free, persistent CTF platform. Challenges remain available year-round. Excellent intro to web exploitation, cryptography, forensics, and reverse engineering. Highly recommended first CTF.</div><a href="https://picoctf.org" class="resource-card-link">picoctf.org →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-green">🌊</div><span class="badge badge-beginner">Beginner</span></div><div class="resource-card-title">OverTheWire: Bandit</div><div class="resource-card-desc">Linux command-line wargame. SSH-based challenges progressing through Linux fundamentals. Levels 0–34 cover essential skills. No prior knowledge required to start.</div><a href="https://overthewire.org/wargames/bandit" class="resource-card-link">overthewire.org →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-green">🐄</div><span class="badge badge-beginner">Beginner</span></div><div class="resource-card-title">DVWA</div><div class="resource-card-desc">Damn Vulnerable Web Application. Self-hosted deliberately vulnerable PHP/MySQL web app. Low/Medium/High security levels. Perfect for learning SQLi, XSS, CSRF, and file inclusion locally.</div><a href="https://dvwa.co.uk" class="resource-card-link">dvwa.co.uk →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-green">🌐</div><span class="badge badge-beginner">Beginner</span></div><div class="resource-card-title">PortSwigger Web Security Academy</div><div class="resource-card-desc">250+ free web security labs from Burp Suite's creators. The gold standard for web hacking practice. From basic SQLi to advanced deserialization and OAuth vulnerabilities.</div><a href="https://portswigger.net/web-security" class="resource-card-link">portswigger.net →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-green">🔐</div><span class="badge badge-beginner">Beginner</span></div><div class="resource-card-title">CryptoHack</div><div class="resource-card-desc">Free platform for learning modern cryptography through challenges. Covers RSA, AES, elliptic curves, and more. Perfect for CTF cryptography preparation. Python-based challenges.</div><a href="https://cryptohack.org" class="resource-card-link">cryptohack.org →</a></div>
+        </div>
+      </div>
+
+      <div class="tab-panel" data-panel="intermediate-plat">
+        <div class="grid-auto stagger-children">
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-amber">🟥</div><span class="badge badge-intermediate">Intermediate</span></div><div class="resource-card-title">Hack The Box</div><div class="resource-card-desc">Real-world penetration testing labs with machines rated Easy → Insane. Weekly new machines, seasonal ProLabs for complex network environments. HTB Academy for structured learning.</div><a href="https://hackthebox.com" class="resource-card-link">hackthebox.com →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-amber">🐱</div><span class="badge badge-intermediate">Intermediate</span></div><div class="resource-card-title">VulnHub</div><div class="resource-card-desc">Free downloadable vulnerable virtual machines. Hundreds of machines across all difficulty levels. Practice offline without internet. Excellent OSCP preparation methodology practice.</div><a href="https://vulnhub.com" class="resource-card-link">vulnhub.com →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-amber">🌊</div><span class="badge badge-intermediate">Intermediate</span></div><div class="resource-card-title">OverTheWire: Natas (Web)</div><div class="resource-card-desc">Web security wargame covering PHP security, SQL injection, local/remote file inclusion, and web fundamentals. Browser-based, no VM needed. 35 levels of increasing difficulty.</div><a href="https://overthewire.org/wargames/natas" class="resource-card-link">overthewire.org →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-amber">🐉</div><span class="badge badge-intermediate">Intermediate</span></div><div class="resource-card-title">Root-Me</div><div class="resource-card-desc">400+ challenges across web, network, reverse engineering, cryptography, forensics, and more. French platform with international community. No VMs — challenge-based only.</div><a href="https://root-me.org" class="resource-card-link">root-me.org →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-amber">💥</div><span class="badge badge-intermediate">Intermediate</span></div><div class="resource-card-title">pwn.college</div><div class="resource-card-desc">Free binary exploitation training from Arizona State University. Structured curriculum: assembly, stack exploitation, heap exploitation, kernel exploitation. Excellent binary pwn foundation.</div><a href="https://pwn.college" class="resource-card-link">pwn.college →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-amber">🦅</div><span class="badge badge-intermediate">Intermediate</span></div><div class="resource-card-title">HackTheBox Academy</div><div class="resource-card-desc">Structured, module-based learning integrated with HTB labs. Covers AD attacks, web exploitation, privilege escalation, network pivoting. More structured than the main platform.</div><a href="https://academy.hackthebox.com" class="resource-card-link">academy.hackthebox.com →</a></div>
+        </div>
+      </div>
+
+      <div class="tab-panel" data-panel="pro-plat">
+        <div class="grid-auto stagger-children">
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-purple">🏆</div><span class="badge badge-pro">Pro</span></div><div class="resource-card-title">HTB ProLabs</div><div class="resource-card-desc">Full enterprise network simulations — Offshore, RastaLabs, Cybernetics. Multi-machine AD environments mimicking real corporate networks. Essential OSCP+ and red team preparation.</div><a href="https://hackthebox.com/hacker/pro-labs" class="resource-card-link">hackthebox.com →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-purple">⚔️</div><span class="badge badge-pro">Pro</span></div><div class="resource-card-title">Offshore ProLab (HTB)</div><div class="resource-card-desc">Simulates a real enterprise AD environment with 16+ machines across multiple domains. The closest thing to a real red team engagement in a lab. OSCP+ level preparation.</div><a href="https://hackthebox.com" class="resource-card-link">hackthebox.com →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-purple">🐝</div><span class="badge badge-pro">Pro</span></div><div class="resource-card-title">HackerOne / Bugcrowd</div><div class="resource-card-desc">Bug bounty platforms. Get paid for finding real vulnerabilities in real systems. Start with beginner-friendly programs. Top hunters earn six figures annually.</div><a href="https://hackerone.com" class="resource-card-link">hackerone.com →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-purple">💣</div><span class="badge badge-pro">Pro</span></div><div class="resource-card-title">CTFtime.org</div><div class="resource-card-desc">The definitive CTF competition calendar and ranking site. Find upcoming competitions, team rankings, past writeups, and event archives. All difficulty levels represented.</div><a href="https://ctftime.org" class="resource-card-link">ctftime.org →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-purple">🌍</div><span class="badge badge-pro">Pro</span></div><div class="resource-card-title">DEF CON CTF</div><div class="resource-card-desc">The Olympics of hacking. DEF CON's annual CTF is the world's most prestigious competition. Top teams from global qualifiers compete live in Las Vegas. Spectacularly hard.</div><a href="https://defcon.org" class="resource-card-link">defcon.org →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-purple">🔍</div><span class="badge badge-pro">Pro</span></div><div class="resource-card-title">crackmes.one</div><div class="resource-card-desc">Community-submitted reverse engineering challenges (crackmes). Hundreds of binaries to crack. Great for practising Ghidra/x64dbg workflow and developing RE intuition.</div><a href="https://crackmes.one" class="resource-card-link">crackmes.one →</a></div>
+        </div>
+      </div>
+
+      <div class="tab-panel" data-panel="blue-plat">
+        <div class="grid-auto stagger-children">
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-cyan">🛡</div><span class="badge badge-beginner">Beginner</span></div><div class="resource-card-title">TryHackMe — SOC Level 1</div><div class="resource-card-desc">Dedicated SOC analyst learning path on TryHackMe. Alert triage, SIEM basics, phishing investigation, network traffic analysis. Guided and beginner-friendly.</div><a href="https://tryhackme.com/path/outline/soclevel1" class="resource-card-link">tryhackme.com →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-cyan">🔍</div><span class="badge badge-intermediate">Intermediate</span></div><div class="resource-card-title">Blue Team Labs Online</div><div class="resource-card-desc">Hands-on defensive challenges — log analysis, incident response, malware investigation, network forensics. Points-based system with explanations. Best dedicated blue team practice platform.</div><a href="https://blueteamlabs.online" class="resource-card-link">blueteamlabs.online →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-cyan">📊</div><span class="badge badge-intermediate">Intermediate</span></div><div class="resource-card-title">LetsDefend</div><div class="resource-card-desc">SOC simulation platform. Work real alerts in a simulated SOC environment — phishing analysis, malware investigation, SIEM queries. Unique format provides genuine SOC experience.</div><a href="https://letsdefend.io" class="resource-card-link">letsdefend.io →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-cyan">🦈</div><span class="badge badge-intermediate">Intermediate</span></div><div class="resource-card-title">Malware Traffic Analysis</div><div class="resource-card-desc">Brad Duncan's free site with real pcap captures from malware infections. Practice Wireshark analysis on genuine malicious traffic. Invaluable for network forensics skills.</div><a href="https://malware-traffic-analysis.net" class="resource-card-link">malware-traffic-analysis.net →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-cyan">🔵</div><span class="badge badge-intermediate">Intermediate</span></div><div class="resource-card-title">Security Onion Lab</div><div class="resource-card-desc">Set up Security Onion in a VM for a complete NSM practice environment. Ingest your own lab traffic and practice Zeek, Suricata, and Elasticsearch-based detection.</div><a href="https://securityonionsolutions.com" class="resource-card-link">securityonionsolutions.com →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-cyan">🧪</div><span class="badge badge-pro">Pro</span></div><div class="resource-card-title">ANY.RUN Interactive Sandbox</div><div class="resource-card-desc">Interactive malware sandbox. Run suspicious files live in a browser and observe behaviour. Free tier available. Excellent for practising malware analysis workflows.</div><a href="https://any.run" class="resource-card-link">any.run →</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTF Tips ───────────────────────────────────── -->
+  <section class="section">
+    <div class="section-header fade-up">
+      <div class="section-label">Strategy</div>
+      <h2 class="section-title">How to Succeed at CTFs</h2>
+    </div>
+    <div class="grid-3 stagger-children">
+      <div class="glass-card" style="padding:26px">
+        <div style="font-size:36px;margin-bottom:14px">🔰</div>
+        <h3 style="font-weight:700;margin-bottom:10px">For Beginners</h3>
+        <ul class="styled-list" style="font-size:13px">
+          <li>Start with PicoCTF — persistent challenges, great for learning</li>
+          <li>Don't skip categories — web and forensics are most beginner-accessible</li>
+          <li>Read write-ups immediately after getting stuck for 30 mins</li>
+          <li>Keep notes on every technique you encounter</li>
+          <li>Join TryHackMe — guided rooms teach the skills CTFs test</li>
+          <li>Progress is not linear — some challenges click instantly, others don't</li>
+        </ul>
+      </div>
+      <div class="glass-card" style="padding:26px">
+        <div style="font-size:36px;margin-bottom:14px">⚙️</div>
+        <h3 style="font-weight:700;margin-bottom:10px">Essential CTF Toolkit</h3>
+        <ul class="styled-list" style="font-size:13px">
+          <li><strong>Kali Linux</strong> — your base platform</li>
+          <li><strong>Burp Suite</strong> — all web challenges</li>
+          <li><strong>Python 3</strong> — scripting solutions and crypto</li>
+          <li><strong>Ghidra / x64dbg</strong> — reverse engineering</li>
+          <li><strong>Wireshark</strong> — network and forensics</li>
+          <li><strong>CyberChef</strong> — encoding/decoding everything</li>
+          <li><strong>pwntools</strong> — binary exploitation scripting</li>
+          <li><strong>Steghide / exiftool</strong> — steganography</li>
+        </ul>
+      </div>
+      <div class="glass-card" style="padding:26px">
+        <div style="font-size:36px;margin-bottom:14px">📝</div>
+        <h3 style="font-weight:700;margin-bottom:10px">Write-Up Culture</h3>
+        <ul class="styled-list" style="font-size:13px">
+          <li>Always write up challenges you solved — even easy ones</li>
+          <li>Publish on a blog, GitHub, or Medium for visibility</li>
+          <li>Read other team's write-ups after events — learn different approaches</li>
+          <li>CTFtime.org archives write-ups from all major events</li>
+          <li>A strong write-up portfolio is impressive to security employers</li>
+          <li>Write-ups teach as much as solving the challenge itself</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTF Competitions ───────────────────────────── -->
+  <section class="section">
+    <div class="section-header fade-up">
+      <div class="section-label">Competitions</div>
+      <h2 class="section-title">Major CTF Competitions</h2>
+      <p class="section-desc">Compete against the world's best security researchers. Find events at ctftime.org.</p>
+    </div>
+    <div class="grid-auto stagger-children">
+      <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-red">🏆</div><span class="badge badge-pro">Pro</span></div><div class="resource-card-title">DEF CON CTF</div><div class="resource-card-desc">The most prestigious CTF in the world. Annual finals in Las Vegas. Top teams qualify through the DEF CON CTF Qualifier. Extremely difficult — Attack/Defence format.</div><a href="https://defcon.org/html/links/dc-ctf.html" class="resource-card-link">defcon.org →</a></div>
+      <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-purple">🌍</div><span class="badge badge-intermediate">Intermediate</span></div><div class="resource-card-title">Google CTF</div><div class="resource-card-desc">Annual Jeopardy-style CTF from Google. High-quality challenges across all categories. Beginner competition alongside main event. Google careers often scout top performers.</div><a href="https://capturetheflag.withgoogle.com" class="resource-card-link">capturetheflag.withgoogle.com →</a></div>
+      <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-amber">🎓</div><span class="badge badge-beginner">Beginner</span></div><div class="resource-card-title">PicoCTF (Carnegie Mellon)</div><div class="resource-card-desc">Annual beginner-to-intermediate competition. Designed for students but open to all. Excellent challenge quality, persistent platform, and great community.</div><a href="https://picoctf.org" class="resource-card-link">picoctf.org →</a></div>
+      <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-cyan">🔵</div><span class="badge badge-intermediate">Intermediate</span></div><div class="resource-card-title">NahamCon CTF</div><div class="resource-card-desc">Online conference + CTF. Beginner-accessible with wide range of challenges. Strong community, good writeup culture. Great for practising real CTF competition pressure.</div><a href="https://nahamcon.com" class="resource-card-link">nahamcon.com →</a></div>
+      <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-green">🇦🇺</div><span class="badge badge-intermediate">Intermediate</span></div><div class="resource-card-title">DownUnderCTF</div><div class="resource-card-desc">Australia's largest CTF competition. Beginner-friendly with separate beginner division. Excellent challenge quality. Online, open globally. Strong APAC community.</div><a href="https://downunderctf.com" class="resource-card-link">downunderctf.com →</a></div>
+      <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-purple">🌐</div><span class="badge badge-pro">Pro</span></div><div class="resource-card-title">PlaidCTF</div><div class="resource-card-desc">Annual CTF run by Carnegie Mellon's Plaid Parliament of Pwning (PPP). Elite-level challenges. One of the most respected competitions in the community.</div><a href="https://plaidctf.com" class="resource-card-link">plaidctf.com →</a></div>
+    </div>
+  </section>
+
+  <!-- ─── Learning from Write-ups ────────────────────── -->
+  <section class="section">
+    <div class="section-header fade-up">
+      <div class="section-label">Learning Material</div>
+      <h2 class="section-title">CTF Write-up Resources</h2>
+      <p class="section-desc">Learn from solved challenges — write-ups are one of the most efficient ways to advance your skills.</p>
+    </div>
+    <div class="grid-auto stagger-children">
+      <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-amber">📚</div><span class="badge badge-beginner">Beginner</span></div><div class="resource-card-title">CTFtime Write-ups</div><div class="resource-card-desc">Archive of write-ups from thousands of CTF competitions. Search by challenge type, team, or event. The single best write-up repository available.</div><a href="https://ctftime.org/writeups" class="resource-card-link">ctftime.org →</a></div>
+      <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-amber">📺</div><span class="badge badge-intermediate">Intermediate</span></div><div class="resource-card-title">John Hammond — YouTube</div><div class="resource-card-desc">CTF challenge walkthroughs across web, forensics, reverse engineering, and more. Detailed explanations of methodology. Excellent for learning problem-solving approaches.</div><a href="https://youtube.com/@_JohnHammond" class="resource-card-link">youtube.com →</a></div>
+      <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-amber">📺</div><span class="badge badge-intermediate">Intermediate</span></div><div class="resource-card-title">IppSec — YouTube</div><div class="resource-card-desc">Retired HackTheBox machine walkthroughs. Detailed methodology for enumeration, exploitation, and privilege escalation. Essential for learning HTB workflow.</div><a href="https://youtube.com/@ippsec" class="resource-card-link">youtube.com →</a></div>
+      <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-purple">📺</div><span class="badge badge-pro">Pro</span></div><div class="resource-card-title">LiveOverflow — YouTube</div><div class="resource-card-desc">Deep technical CTF walkthroughs — binary exploitation, web, and more. Excellent for understanding vulnerability mechanics at a deep level. Don't skip the binary series.</div><a href="https://youtube.com/@LiveOverflow" class="resource-card-link">youtube.com →</a></div>
+    </div>
+  </section>
+
+  <!-- ─── Building a CTF Team ────────────────────────── -->
+  <section class="section">
+    <div class="section-header fade-up">
+      <div class="section-label">Community</div>
+      <h2 class="section-title">Building or Joining a CTF Team</h2>
+    </div>
+    <div class="grid-2">
+      <div class="glass-card no-hover" style="padding:28px">
+        <h3 style="font-weight:800;margin-bottom:14px;color:var(--accent-cyan)">🤝 Finding a Team</h3>
+        <ul class="styled-list">
+          <li>Check CTFtime.org — teams recruit members publicly</li>
+          <li>Join TryHackMe or HTB Discord — team-finding channels exist</li>
+          <li>Local DEF CON groups often have CTF teams</li>
+          <li>University security clubs always welcome members</li>
+          <li>Perform well solo first — good players get recruited</li>
+          <li>Starting your own small team is legitimate — even 2–3 people helps</li>
+        </ul>
+      </div>
+      <div class="glass-card no-hover" style="padding:28px">
+        <h3 style="font-weight:800;margin-bottom:14px;color:var(--accent-emerald)">🎯 Team Specialisation Strategy</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6;margin-bottom:14px">Strong CTF teams have specialists in different categories, not generalists:</p>
+        <ul class="styled-list">
+          <li>Assign web, pwn, RE, crypto, and forensics specialists</li>
+          <li>Designate a team captain who coordinates and prioritises challenges</li>
+          <li>Use collaborative notes tools (HackMD, Notion) during competitions</li>
+          <li>Share flag submission duties — avoid duplication of work</li>
+          <li>Post-competition reviews are as valuable as the competition itself</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA ───────────────────────────────────────── -->
+  <section class="section">
+    <div class="glass-card no-hover" style="padding:56px;text-align:center;background:linear-gradient(135deg,rgba(239,68,68,0.10),rgba(139,92,246,0.08));">
+      <div style="font-size:52px;margin-bottom:20px">🚩</div>
+      <h2 style="font-size:clamp(26px,4vw,42px);font-weight:800;letter-spacing:-0.02em;margin-bottom:16px">Start Capturing Flags Today</h2>
+      <p style="color:var(--text-secondary);font-size:17px;max-width:520px;margin:0 auto 36px;line-height:1.65">There's no better way to learn security than by practising it. Start with TryHackMe or PicoCTF — both are free, beginner-friendly, and will build skills faster than any course alone.</p>
+      <div class="hero-actions">
+        <a href="https://tryhackme.com" class="btn btn-primary">🎮 Start TryHackMe Free</a>
+        <a href="https://picoctf.org" class="btn btn-glass">🏫 Try PicoCTF</a>
+        <a href="https://hackthebox.com" class="btn btn-glass">🟥 Hack The Box</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

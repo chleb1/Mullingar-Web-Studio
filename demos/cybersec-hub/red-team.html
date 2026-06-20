@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Team — CyberHub</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="page-content">
+
+  <div class="page-hero">
+    <div class="hero-eyebrow"><span class="dot" style="background:var(--accent-red)"></span>Offensive Security</div>
+    <h1 class="page-hero-title"><span class="gradient-text-red">Red Team</span><br>Offense Wins Championships</h1>
+    <p class="page-hero-desc">Think like the adversary. Red teaming is the art of simulating real-world attacks to expose vulnerabilities before malicious actors do.</p>
+    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+      <span class="badge badge-intermediate">Intermediate</span>
+      <span class="badge badge-pro">Pro</span>
+    </div>
+  </div>
+
+  <!-- ─── What is Red Teaming ─────────────────────── -->
+  <section class="section" style="padding-top:0">
+    <div class="section-header fade-up">
+      <div class="section-label">Foundation</div>
+      <h2 class="section-title">What is Red Teaming?</h2>
+    </div>
+    <div class="grid-2">
+      <div class="glass-card no-hover" style="padding:32px">
+        <h3 style="font-size:18px;font-weight:800;margin-bottom:14px;color:var(--accent-cyan)">Definition</h3>
+        <p style="color:var(--text-secondary);line-height:1.7;font-size:14.5px">Red teaming is a full-scope, adversarial simulation of real-world attacks against an organisation's people, processes, and technology. Unlike penetration testing, red team engagements are longer (weeks to months), stealthier, and goal-oriented — the aim is to reach a defined objective (e.g., access financial data) without being detected.</p>
+        <div class="divider"></div>
+        <h3 style="font-size:16px;font-weight:700;margin-bottom:10px">Red Team vs. Penetration Testing</h3>
+        <ul class="styled-list">
+          <li>Pentest: scoped, time-boxed, finds all vulnerabilities</li>
+          <li>Red Team: objective-based, stealth-focused, adversary simulation</li>
+          <li>Red Team tests the blue team's detection capability</li>
+          <li>Red Team engagements often go weeks or months</li>
+        </ul>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div class="info-panel border-red">
+          <h4 style="font-weight:700;margin-bottom:8px;color:var(--accent-red)">⚠️ Legal & Ethical Boundary</h4>
+          <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">Red teaming is only legal with explicit written permission (Rules of Engagement). Unauthorized testing is a criminal offense in virtually every jurisdiction. Always have a signed Statement of Work before touching any system.</p>
+        </div>
+        <div class="info-panel">
+          <h4 style="font-weight:700;margin-bottom:12px">Core Roles</h4>
+          <ul class="styled-list">
+            <li><strong>Red Team Lead</strong> — Plans and directs the engagement</li>
+            <li><strong>Penetration Tester</strong> — Executes technical attacks</li>
+            <li><strong>Social Engineer</strong> — Phishing, vishing, physical intrusion</li>
+            <li><strong>Malware Developer</strong> — Custom implants and evasion</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Attack Methodology ──────────────────────── -->
+  <section class="section">
+    <div class="section-header fade-up">
+      <div class="section-label">Methodology</div>
+      <h2 class="section-title">The Attack Lifecycle</h2>
+      <p class="section-desc">Red teams follow a structured methodology mirroring real-world threat actors.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:14px" class="stagger-children">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h3>Reconnaissance (OSINT)</h3>
+          <p>Passive and active intelligence gathering — employee data from LinkedIn, DNS enumeration, Shodan searches, leaked credentials, domain information, and technology fingerprinting. Tools: Maltego, theHarvester, Recon-ng, OSINT Framework, SpiderFoot.</p>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h3>Scanning & Enumeration</h3>
+          <p>Active discovery of live hosts, open ports, running services, OS versions, and misconfigurations. Tools: Nmap, Masscan, Nikto, Gobuster, Enum4linux, CrackMapExec, Nessus.</p>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h3>Initial Access</h3>
+          <p>Gaining a foothold using phishing emails, exploiting public-facing vulnerabilities, password spraying, supply chain attacks, or physical access. Tools: Gophish, Metasploit, SQLmap, Evilginx2.</p>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <h3>Privilege Escalation</h3>
+          <p>Escalating from low-privilege user to admin/SYSTEM/root using kernel exploits, misconfigurations, credential abuse, or service exploits. Tools: WinPEAS, LinPEAS, BeRoot, PowerUp, Mimikatz.</p>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-number">5</div>
+        <div class="step-content">
+          <h3>Lateral Movement</h3>
+          <p>Moving through the network to reach target systems. Pass-the-Hash, Pass-the-Ticket, Kerberoasting, BloodHound for AD path mapping. Tools: BloodHound, Impacket, Evil-WinRM, CrackMapExec.</p>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-number">6</div>
+        <div class="step-content">
+          <h3>Persistence & C2</h3>
+          <p>Establishing persistent access via scheduled tasks, registry run keys, web shells, or implants. Maintaining C2 communication using Cobalt Strike, Sliver, Havoc, or Covenant. Tools: Cobalt Strike, Sliver, Havoc Framework.</p>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-number">7</div>
+        <div class="step-content">
+          <h3>Objective Completion & Exfiltration</h3>
+          <p>Reaching the defined goal: accessing sensitive data, compromising critical infrastructure, or demonstrating domain dominance. Documenting every step with evidence.</p>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-number">8</div>
+        <div class="step-content">
+          <h3>Reporting & Remediation</h3>
+          <p>Comprehensive written report covering attack path, evidence, business impact, and prioritised remediation recommendations. Debrief with the blue team (purple team exercise).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Key Concepts ────────────────────────────── -->
+  <section class="section">
+    <div class="section-header fade-up">
+      <div class="section-label">Knowledge</div>
+      <h2 class="section-title">Core Concepts</h2>
+    </div>
+    <div class="grid-3 stagger-children">
+      <div class="glass-card" style="padding:24px">
+        <div style="font-size:32px;margin-bottom:12px">📧</div>
+        <h3 style="font-weight:700;margin-bottom:8px">Social Engineering</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">Phishing, spear-phishing, vishing (voice), smishing (SMS), pretexting, and physical intrusion. The human is often the weakest link. Frameworks: SET (Social Engineering Toolkit).</p>
+      </div>
+      <div class="glass-card" style="padding:24px">
+        <div style="font-size:32px;margin-bottom:12px">🔐</div>
+        <h3 style="font-weight:700;margin-bottom:8px">Active Directory Attacks</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">Kerberoasting, AS-REP Roasting, DCSync, Pass-the-Hash, Golden Ticket, Silver Ticket, ACL Abuse. AD attacks are central to most enterprise red team engagements.</p>
+      </div>
+      <div class="glass-card" style="padding:24px">
+        <div style="font-size:32px;margin-bottom:12px">🌐</div>
+        <h3 style="font-weight:700;margin-bottom:8px">Web Application Attacks</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">SQLi, XSS, SSRF, XXE, IDOR, RCE, authentication bypass, JWT attacks, OAuth flaws, API abuse. OWASP Top 10 is the essential reference.</p>
+      </div>
+      <div class="glass-card" style="padding:24px">
+        <div style="font-size:32px;margin-bottom:12px">📡</div>
+        <h3 style="font-weight:700;margin-bottom:8px">Network Attacks</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">ARP spoofing, MITM, LLMNR/NBT-NS poisoning, DNS hijacking, Responder attacks, SMB relay. Tools: Responder, Ettercap, Bettercap.</p>
+      </div>
+      <div class="glass-card" style="padding:24px">
+        <div style="font-size:32px;margin-bottom:12px">🔓</div>
+        <h3 style="font-weight:700;margin-bottom:8px">Password Attacks</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">Brute force, dictionary attacks, credential stuffing, rainbow tables, hash cracking. Tools: Hashcat (GPU-accelerated), John the Ripper, Hydra, Medusa.</p>
+      </div>
+      <div class="glass-card" style="padding:24px">
+        <div style="font-size:32px;margin-bottom:12px">☁️</div>
+        <h3 style="font-weight:700;margin-bottom:8px">Cloud Attacks</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">S3 bucket misconfigs, IAM privilege escalation, SSRF for metadata, exposed keys, insecure Lambda functions. Tools: Pacu, ScoutSuite, CloudFox, Prowler.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Essential Tools ─────────────────────────── -->
+  <section class="section">
+    <div class="section-header fade-up">
+      <div class="section-label">Arsenal</div>
+      <h2 class="section-title">Red Team Toolkit</h2>
+    </div>
+    <div class="grid-auto-sm stagger-children">
+      <div class="tool-card"><div class="tool-card-name">🗺 Nmap</div><div class="tool-card-purpose">Network discovery and port scanning. The most widely used network mapper. Essential for enumeration.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Linux/Win</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+      <div class="tool-card"><div class="tool-card-name">💥 Metasploit</div><div class="tool-card-purpose">World's most popular exploitation framework. Thousands of modules for exploitation, post-exploitation, and pivoting.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Linux</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+      <div class="tool-card"><div class="tool-card-name">🕷 Burp Suite</div><div class="tool-card-purpose">The de facto web application security testing platform. Intercept, modify, and replay HTTP traffic.</div><div class="tool-tags"><span class="tag">Free/Pro</span><span class="tag">Cross-platform</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+      <div class="tool-card"><div class="tool-card-name">🩸 BloodHound</div><div class="tool-card-purpose">Active Directory attack path visualisation. Finds the shortest path to domain admin using graph theory.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Windows</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+      <div class="tool-card"><div class="tool-card-name">🥷 Mimikatz</div><div class="tool-card-purpose">Credential extraction from Windows memory — NTLM hashes, plaintext passwords, Kerberos tickets.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Windows</span><span class="badge badge-pro">Pro</span></div></div>
+      <div class="tool-card"><div class="tool-card-name">📡 Cobalt Strike</div><div class="tool-card-purpose">Commercial adversary simulation platform with Beacon C2. Industry standard for red teams.</div><div class="tool-tags"><span class="tag">Commercial</span><span class="tag">Windows</span><span class="badge badge-pro">Pro</span></div></div>
+      <div class="tool-card"><div class="tool-card-name">🌐 Sliver</div><div class="tool-card-purpose">Open-source C2 framework — a Cobalt Strike alternative with TLS, HTTP, DNS channels.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Cross-platform</span><span class="badge badge-pro">Pro</span></div></div>
+      <div class="tool-card"><div class="tool-card-name">💉 SQLmap</div><div class="tool-card-purpose">Automated SQL injection discovery and exploitation. Supports most database backends.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Cross-platform</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+      <div class="tool-card"><div class="tool-card-name">📬 Gophish</div><div class="tool-card-purpose">Open-source phishing framework for running realistic phishing simulations and tracking.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Cross-platform</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+      <div class="tool-card"><div class="tool-card-name">🔑 Hashcat</div><div class="tool-card-purpose">GPU-accelerated password cracking. Supports 300+ hash types with wordlists and rule-based attacks.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Cross-platform</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+      <div class="tool-card"><div class="tool-card-name">🕸 Responder</div><div class="tool-card-purpose">LLMNR/NBT-NS/MDNS poisoner for credential capture on Windows networks.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Linux</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+      <div class="tool-card"><div class="tool-card-name">⚙️ Impacket</div><div class="tool-card-purpose">Python classes for network protocols — psexec, wmiexec, smbclient, secretsdump and more.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Python</span><span class="badge badge-pro">Pro</span></div></div>
+    </div>
+  </section>
+
+  <!-- ─── Resources ──────────────────────────────── -->
+  <section class="section">
+    <div class="section-header fade-up">
+      <div class="section-label">Learning Resources</div>
+      <h2 class="section-title">Red Team Resources by Level</h2>
+    </div>
+    <div data-tabs style="max-width:900px;margin:0 auto">
+      <div class="tab-group">
+        <button class="tab-btn active" data-tab="beginner">🌱 Beginner</button>
+        <button class="tab-btn" data-tab="intermediate">📈 Intermediate</button>
+        <button class="tab-btn" data-tab="pro">⚡ Pro</button>
+      </div>
+
+      <div class="tab-panel active" data-panel="beginner">
+        <div class="grid-auto stagger-children">
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-green">🎮</div><span class="badge badge-beginner">Beginner</span></div><div class="resource-card-title">TryHackMe — Pre-Security Path</div><div class="resource-card-desc">Structured beginner pathway covering networking, Linux, web fundamentals, and first hacks in guided rooms. Perfect first step.</div><a href="https://tryhackme.com" class="resource-card-link">tryhackme.com →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-green">📖</div><span class="badge badge-beginner">Beginner</span></div><div class="resource-card-title">The Web Application Hacker's Handbook</div><div class="resource-card-desc">Foundational text for understanding how web applications work and how attackers exploit them. Essential reading.</div><a href="https://portswigger.net/web-security" class="resource-card-link">PortSwigger Web Academy (free) →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-green">🎥</div><span class="badge badge-beginner">Beginner</span></div><div class="resource-card-title">TCM Security — Practical Ethical Hacking</div><div class="resource-card-desc">Heath Adams' beginner pentesting course. Covers networking, Linux, AD, and practical hacking techniques. Highly recommended.</div><a href="https://academy.tcm-sec.com" class="resource-card-link">academy.tcm-sec.com →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-green">🏫</div><span class="badge badge-beginner">Beginner</span></div><div class="resource-card-title">PortSwigger Web Security Academy</div><div class="resource-card-desc">Free, world-class web application security training with hands-on labs. Best free web hacking resource.</div><a href="https://portswigger.net/web-security" class="resource-card-link">portswigger.net →</a></div>
+        </div>
+      </div>
+
+      <div class="tab-panel" data-panel="intermediate">
+        <div class="grid-auto stagger-children">
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-amber">🔴</div><span class="badge badge-intermediate">Intermediate</span></div><div class="resource-card-title">Hack The Box</div><div class="resource-card-desc">Real-world penetration testing labs. Work through machines ranked Easy → Insane. Essential for OSCP prep.</div><a href="https://hackthebox.com" class="resource-card-link">hackthebox.com →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-amber">📗</div><span class="badge badge-intermediate">Intermediate</span></div><div class="resource-card-title">TCM Security — Practical AD Attacks</div><div class="resource-card-desc">In-depth coverage of Active Directory attack chains — essential knowledge for most enterprise engagements.</div><a href="https://academy.tcm-sec.com" class="resource-card-link">academy.tcm-sec.com →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-amber">🎓</div><span class="badge badge-intermediate">Intermediate</span></div><div class="resource-card-title">eJPT — eLearnSecurity</div><div class="resource-card-desc">Junior Penetration Tester certification. A great milestone before OSCP. Fully hands-on exam.</div><a href="https://ine.com/learning/certifications/internal/elearnsecurity-junior-penetration-tester-cert" class="resource-card-link">ine.com →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-amber">📺</div><span class="badge badge-intermediate">Intermediate</span></div><div class="resource-card-title">IppSec YouTube Channel</div><div class="resource-card-desc">Walkthroughs of retired HackTheBox machines. The best free resource for learning HTB methodology.</div><a href="https://youtube.com/@ippsec" class="resource-card-link">youtube.com/@ippsec →</a></div>
+        </div>
+      </div>
+
+      <div class="tab-panel" data-panel="pro">
+        <div class="grid-auto stagger-children">
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-purple">🏆</div><span class="badge badge-pro">Pro</span></div><div class="resource-card-title">OSCP — Offensive Security</div><div class="resource-card-desc">The gold standard pentesting cert. 90-day PWK lab access + 24-hour hands-on exam. Mandatory for serious pentesters.</div><a href="https://offensive-security.com/pwk-oscp" class="resource-card-link">offensive-security.com →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-purple">📘</div><span class="badge badge-pro">Pro</span></div><div class="resource-card-title">Red Team Development & Operations</div><div class="resource-card-desc">Joe Vest & James Tubberville's book. The definitive guide to building and running a red team program.</div><a href="https://redteam.guide" class="resource-card-link">redteam.guide →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-purple">🎯</div><span class="badge badge-pro">Pro</span></div><div class="resource-card-title">Sektor7 Malware Development</div><div class="resource-card-desc">Advanced courses in Windows malware and evasion techniques — AV bypass, shellcode injection, custom implants.</div><a href="https://institute.sektor7.net" class="resource-card-link">institute.sektor7.net →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-purple">🐉</div><span class="badge badge-pro">Pro</span></div><div class="resource-card-title">OSCE3 — Offensive Security</div><div class="resource-card-desc">The OSCP successor trilogy: OSEP, OSED, OSWE. The most advanced offensive certs from OffSec.</div><a href="https://offensive-security.com" class="resource-card-link">offensive-security.com →</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Certifications ──────────────────────────── -->
+  <section class="section">
+    <div class="section-header fade-up">
+      <div class="section-label">Credentials</div>
+      <h2 class="section-title">Red Team Certifications</h2>
+    </div>
+    <div class="grid-3 stagger-children">
+      <div class="cert-card border-green"><div class="badge badge-beginner" style="margin-bottom:12px">Beginner</div><div class="cert-name">CompTIA Security+</div><div class="cert-issuer">CompTIA</div><div class="cert-desc">The essential baseline. Covers basic attack types, security concepts, and network defense fundamentals.</div><div class="cert-meta"><div class="cert-meta-item"><div class="cert-meta-label">Cost</div><div class="cert-meta-value">~$400</div></div><div class="cert-meta-item"><div class="cert-meta-label">Difficulty</div><div class="cert-meta-value">Moderate</div></div></div></div>
+      <div class="cert-card border-amber"><div class="badge badge-intermediate" style="margin-bottom:12px">Intermediate</div><div class="cert-name">eJPT</div><div class="cert-issuer">eLearnSecurity / INE</div><div class="cert-desc">First hands-on pentesting cert. Great bridge between learning and professional practice.</div><div class="cert-meta"><div class="cert-meta-item"><div class="cert-meta-label">Cost</div><div class="cert-meta-value">~$200</div></div><div class="cert-meta-item"><div class="cert-meta-label">Difficulty</div><div class="cert-meta-value">Easy–Moderate</div></div></div></div>
+      <div class="cert-card border-amber"><div class="badge badge-intermediate" style="margin-bottom:12px">Intermediate</div><div class="cert-name">CEH</div><div class="cert-issuer">EC-Council</div><div class="cert-desc">Certified Ethical Hacker. Theory-heavy but valued in corporate/government hiring.</div><div class="cert-meta"><div class="cert-meta-item"><div class="cert-meta-label">Cost</div><div class="cert-meta-value">~$1,100</div></div><div class="cert-meta-item"><div class="cert-meta-label">Difficulty</div><div class="cert-meta-value">Moderate</div></div></div></div>
+      <div class="cert-card border-purple"><div class="badge badge-pro" style="margin-bottom:12px">Pro</div><div class="cert-name">OSCP</div><div class="cert-issuer">Offensive Security</div><div class="cert-desc">The gold standard. 24-hour hands-on exam, proves real offensive skill. Most respected pentest cert.</div><div class="cert-meta"><div class="cert-meta-item"><div class="cert-meta-label">Cost</div><div class="cert-meta-value">~$1,499</div></div><div class="cert-meta-item"><div class="cert-meta-label">Difficulty</div><div class="cert-meta-value">Very Hard</div></div></div></div>
+      <div class="cert-card border-purple"><div class="badge badge-pro" style="margin-bottom:12px">Pro</div><div class="cert-name">GPEN</div><div class="cert-issuer">GIAC / SANS</div><div class="cert-desc">GIAC Penetration Tester. Expensive but SANS-quality training. Open book exam, highly practical.</div><div class="cert-meta"><div class="cert-meta-item"><div class="cert-meta-label">Cost</div><div class="cert-meta-value">~$949 + course</div></div><div class="cert-meta-item"><div class="cert-meta-label">Difficulty</div><div class="cert-meta-value">Hard</div></div></div></div>
+      <div class="cert-card border-purple"><div class="badge badge-pro" style="margin-bottom:12px">Pro</div><div class="cert-name">CRTE</div><div class="cert-issuer">Altered Security</div><div class="cert-desc">Certified Red Team Expert — advanced Active Directory and cloud red teaming. Highly regarded.</div><div class="cert-meta"><div class="cert-meta-item"><div class="cert-meta-label">Cost</div><div class="cert-meta-value">~$249–$449</div></div><div class="cert-meta-item"><div class="cert-meta-label">Difficulty</div><div class="cert-meta-value">Hard</div></div></div></div>
+    </div>
+    <div style="text-align:center;margin-top:32px"><a href="certifications.html" class="btn btn-glass">View All Certifications →</a></div>
+  </section>
+
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

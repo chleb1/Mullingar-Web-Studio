@@ -186,6 +186,63 @@
         object-position: top center;
       }
 
+      /* Live-demo preview panels (no screenshot needed) */
+      .portfolio-mockup__preview {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.55rem;
+        text-align: center;
+        padding: 1rem;
+      }
+      .portfolio-mockup__preview-icon {
+        font-size: 2.4rem;
+        line-height: 1;
+      }
+      .portfolio-mockup__preview-name {
+        font-family: "Cabinet Grotesk", sans-serif;
+        font-weight: 800;
+        font-size: 1.55rem;
+        letter-spacing: -0.01em;
+        line-height: 1.1;
+      }
+      .portfolio-mockup__preview-sub {
+        font-size: 0.68rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        opacity: 0.72;
+      }
+      .portfolio-mockup__preview--gym {
+        background: radial-gradient(
+          120% 120% at 20% 0%,
+          #1e3a8a 0%,
+          #0b1120 55%,
+          #070b14 100%
+        );
+        color: #eaf1ff;
+      }
+      .portfolio-mockup__preview--cyber {
+        background: radial-gradient(
+          120% 120% at 80% 10%,
+          #064e3b 0%,
+          #0a0f0d 55%,
+          #050807 100%
+        );
+        color: #d7ffe9;
+      }
+      .portfolio-mockup__preview--cosmic {
+        background: radial-gradient(
+          120% 120% at 50% 120%,
+          #4c1d95 0%,
+          #0a0a1f 55%,
+          #03030a 100%
+        );
+        color: #e7e3ff;
+      }
+
       /* Hover overlay — live site link only */
       .portfolio-mockup--live {
         cursor: pointer;
@@ -494,7 +551,7 @@
             builders. Here's a look at what we've delivered for clients across
             Ireland.
           </p>
-          <p class="portfolio-count reveal reveal-d3" aria-label="2 projects">
+          <p class="portfolio-count reveal reveal-d3" aria-label="5 projects">
             <svg
               width="14"
               height="14"
@@ -507,7 +564,7 @@
               <rect x="3" y="4" width="18" height="14" rx="2" />
               <path d="M3 8h18" />
             </svg>
-            2 projects
+            5 projects
           </p>
         </div>
       </section>
@@ -672,6 +729,269 @@
                   <li>Supervision & CPD pages</li>
                   <li>Trust badges</li>
                   <li>Client testimonials</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- ── Ascend Gym Tracker (live demo) ── -->
+            <article class="portfolio-card reveal reveal-d1">
+              <a
+                href="demos/gym-tracker/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="portfolio-mockup portfolio-mockup--live"
+                aria-label="Launch the Ascend Gym Tracker app — opens in a new tab"
+              >
+                <div class="portfolio-mockup__bar">
+                  <span class="portfolio-mockup__dot"></span>
+                  <span class="portfolio-mockup__dot"></span>
+                  <span class="portfolio-mockup__dot"></span>
+                  <span class="portfolio-mockup__url">ascend · gym tracker</span>
+                </div>
+                <div class="portfolio-mockup__preview portfolio-mockup__preview--gym">
+                  <span class="portfolio-mockup__preview-icon" aria-hidden="true"
+                    >🏋️</span
+                  >
+                  <span class="portfolio-mockup__preview-name">Ascend</span>
+                  <span class="portfolio-mockup__preview-sub">Gym Tracker · PWA</span>
+                </div>
+                <div class="portfolio-mockup__overlay" aria-hidden="true">
+                  <span class="portfolio-mockup__overlay-label">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"
+                      />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                    Launch app
+                  </span>
+                </div>
+              </a>
+
+              <div class="portfolio-card__info">
+                <div class="portfolio-card__meta">
+                  <span class="portfolio-card__tag">Fitness App</span>
+                  <span
+                    class="portfolio-card__badge portfolio-card__badge--live"
+                  >
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.8"
+                      aria-hidden="true"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    Live demo
+                  </span>
+                </div>
+                <h2 class="portfolio-card__title">Ascend — Gym Tracker</h2>
+                <p class="portfolio-card__desc">
+                  An installable progressive web app for logging workouts,
+                  tracking personal records, and watching your strength climb
+                  over time. Sleek dark interface, fully offline-capable, and
+                  fast on any phone.
+                </p>
+                <ul
+                  class="portfolio-card__features"
+                  aria-label="Features included"
+                >
+                  <li>Installable PWA</li>
+                  <li>Offline support</li>
+                  <li>Workout logging</li>
+                  <li>Personal records</li>
+                  <li>Progress tracking</li>
+                  <li>Mobile-first design</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- ── CyberHub (live demo) ── -->
+            <article class="portfolio-card reveal reveal-d2">
+              <a
+                href="demos/cybersec-hub/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="portfolio-mockup portfolio-mockup--live"
+                aria-label="Launch the CyberHub site — opens in a new tab"
+              >
+                <div class="portfolio-mockup__bar">
+                  <span class="portfolio-mockup__dot"></span>
+                  <span class="portfolio-mockup__dot"></span>
+                  <span class="portfolio-mockup__dot"></span>
+                  <span class="portfolio-mockup__url">cyberhub.io</span>
+                </div>
+                <div class="portfolio-mockup__preview portfolio-mockup__preview--cyber">
+                  <span class="portfolio-mockup__preview-icon" aria-hidden="true"
+                    >🛡️</span
+                  >
+                  <span class="portfolio-mockup__preview-name">CyberHub</span>
+                  <span class="portfolio-mockup__preview-sub"
+                    >Cybersecurity Resource</span
+                  >
+                </div>
+                <div class="portfolio-mockup__overlay" aria-hidden="true">
+                  <span class="portfolio-mockup__overlay-label">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"
+                      />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                    Launch site
+                  </span>
+                </div>
+              </a>
+
+              <div class="portfolio-card__info">
+                <div class="portfolio-card__meta">
+                  <span class="portfolio-card__tag">Education Platform</span>
+                  <span
+                    class="portfolio-card__badge portfolio-card__badge--live"
+                  >
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.8"
+                      aria-hidden="true"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    Live demo
+                  </span>
+                </div>
+                <h2 class="portfolio-card__title">CyberHub</h2>
+                <p class="portfolio-card__desc">
+                  A complete cybersecurity learning platform that takes visitors
+                  from beginner to professional — covering red team, blue team,
+                  tools, certifications, coding, and career paths across a
+                  multi-page, dark-themed site.
+                </p>
+                <ul
+                  class="portfolio-card__features"
+                  aria-label="Features included"
+                >
+                  <li>Multi-page site</li>
+                  <li>Dark theme</li>
+                  <li>Red & blue team guides</li>
+                  <li>Certification paths</li>
+                  <li>CTF labs</li>
+                  <li>Career resources</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- ── Cosmic Discoveries (live demo) ── -->
+            <article class="portfolio-card reveal reveal-d3">
+              <a
+                href="demos/cosmic-discoveries.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="portfolio-mockup portfolio-mockup--live"
+                aria-label="Launch the Cosmic Discoveries experience — opens in a new tab"
+              >
+                <div class="portfolio-mockup__bar">
+                  <span class="portfolio-mockup__dot"></span>
+                  <span class="portfolio-mockup__dot"></span>
+                  <span class="portfolio-mockup__dot"></span>
+                  <span class="portfolio-mockup__url"
+                    >cosmic-discoveries.app</span
+                  >
+                </div>
+                <div
+                  class="portfolio-mockup__preview portfolio-mockup__preview--cosmic"
+                >
+                  <span class="portfolio-mockup__preview-icon" aria-hidden="true"
+                    >🪐</span
+                  >
+                  <span class="portfolio-mockup__preview-name"
+                    >Cosmic Discoveries</span
+                  >
+                  <span class="portfolio-mockup__preview-sub">3D · WebGL Journey</span>
+                </div>
+                <div class="portfolio-mockup__overlay" aria-hidden="true">
+                  <span class="portfolio-mockup__overlay-label">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"
+                      />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                    Launch experience
+                  </span>
+                </div>
+              </a>
+
+              <div class="portfolio-card__info">
+                <div class="portfolio-card__meta">
+                  <span class="portfolio-card__tag">Interactive 3D</span>
+                  <span
+                    class="portfolio-card__badge portfolio-card__badge--live"
+                  >
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.8"
+                      aria-hidden="true"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    Live demo
+                  </span>
+                </div>
+                <h2 class="portfolio-card__title">Cosmic Discoveries</h2>
+                <p class="portfolio-card__desc">
+                  A cinematic, scroll-driven 3D flight through four centuries of
+                  astronomy — from Galileo's moons to the first image of a black
+                  hole. Built with WebGL and React Three Fiber for a fully
+                  immersive experience.
+                </p>
+                <ul
+                  class="portfolio-card__features"
+                  aria-label="Features included"
+                >
+                  <li>Real-time 3D (WebGL)</li>
+                  <li>Scroll-driven story</li>
+                  <li>React Three Fiber</li>
+                  <li>10 astronomy milestones</li>
+                  <li>Cinematic camera</li>
+                  <li>Post-processing FX</li>
                 </ul>
               </div>
             </article>

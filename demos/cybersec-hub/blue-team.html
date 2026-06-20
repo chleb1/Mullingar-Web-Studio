@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue Team — CyberHub</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="page-content">
+
+  <div class="page-hero">
+    <div class="hero-eyebrow"><span class="dot" style="background:var(--accent-cyan)"></span>Defensive Security</div>
+    <h1 class="page-hero-title"><span class="gradient-text">Blue Team</span><br>Defend, Detect, Respond</h1>
+    <p class="page-hero-desc">The guardians of the network. Blue teams protect organisations by detecting threats, responding to incidents, and hardening defences against a constantly evolving threat landscape.</p>
+    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+      <span class="badge badge-beginner">Beginner</span>
+      <span class="badge badge-intermediate">Intermediate</span>
+      <span class="badge badge-pro">Pro</span>
+    </div>
+  </div>
+
+  <!-- ─── SOC Overview ────────────────────────────── -->
+  <section class="section" style="padding-top:0">
+    <div class="section-header fade-up">
+      <div class="section-label">Foundation</div>
+      <h2 class="section-title">The Security Operations Centre</h2>
+    </div>
+    <div class="grid-2">
+      <div class="glass-card no-hover" style="padding:32px">
+        <h3 style="font-size:18px;font-weight:800;margin-bottom:14px;color:var(--accent-cyan)">What is a SOC?</h3>
+        <p style="color:var(--text-secondary);line-height:1.7;font-size:14.5px;margin-bottom:20px">A Security Operations Centre (SOC) is a centralised team that monitors, detects, investigates, and responds to cybersecurity incidents 24/7. The SOC is the frontline of an organisation's defence — combining people, processes, and technology to protect against threats.</p>
+        <div class="divider"></div>
+        <h4 style="font-weight:700;margin-bottom:12px">SOC Tiers</h4>
+        <ul class="styled-list">
+          <li><strong>Tier 1 — Alert Analyst:</strong> Monitors dashboards, triages alerts, escalates incidents</li>
+          <li><strong>Tier 2 — Incident Responder:</strong> Deep investigation, containment, remediation</li>
+          <li><strong>Tier 3 — Threat Hunter:</strong> Proactive hunting for threats that evaded detection</li>
+          <li><strong>Tier 4 — SOC Manager:</strong> Oversight, reporting, process improvement</li>
+        </ul>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div class="glass-card no-hover" style="padding:24px">
+          <h4 style="font-weight:700;margin-bottom:12px;color:var(--accent-emerald)">Blue Team Functions</h4>
+          <ul class="styled-list">
+            <li>Security monitoring and alert triage</li>
+            <li>Threat detection and hunting</li>
+            <li>Incident response and forensics</li>
+            <li>Vulnerability management</li>
+            <li>Security architecture and hardening</li>
+            <li>Threat intelligence consumption</li>
+            <li>Log analysis and SIEM management</li>
+          </ul>
+        </div>
+        <div class="info-panel border-cyan">
+          <h4 style="font-weight:700;margin-bottom:8px;color:var(--accent-cyan)">Purple Teaming</h4>
+          <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">Purple team exercises combine red and blue team collaboration — the red team attacks while the blue team observes, learns, and improves detection rules in real time. This accelerates security maturity significantly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Key Disciplines ─────────────────────────── -->
+  <section class="section">
+    <div class="section-header fade-up">
+      <div class="section-label">Disciplines</div>
+      <h2 class="section-title">Blue Team Specialisations</h2>
+      <p class="section-desc">Blue team is broad — most professionals specialise in one or more of these areas.</p>
+    </div>
+    <div class="grid-3 stagger-children">
+      <div class="glass-card" style="padding:26px">
+        <div style="font-size:36px;margin-bottom:14px">📊</div>
+        <h3 style="font-weight:700;margin-bottom:8px">SIEM & Log Analysis</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">Ingesting, correlating, and analysing log data from across the environment. Writing detection rules. SIEM platforms: Splunk, Microsoft Sentinel, Elastic SIEM, IBM QRadar, LogRhythm.</p>
+      </div>
+      <div class="glass-card" style="padding:26px">
+        <div style="font-size:36px;margin-bottom:14px">🔍</div>
+        <h3 style="font-weight:700;margin-bottom:8px">Threat Hunting</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">Proactively searching for threats that evaded automated detection. Uses hypothesis-driven approaches based on threat intelligence and MITRE ATT&CK. Tools: Velociraptor, Elastic, YARA.</p>
+      </div>
+      <div class="glass-card" style="padding:26px">
+        <div style="font-size:36px;margin-bottom:14px">🚨</div>
+        <h3 style="font-weight:700;margin-bottom:8px">Incident Response</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">Structured process for containing and recovering from security incidents. PICERL: Preparation, Identification, Containment, Eradication, Recovery, Lessons Learned.</p>
+      </div>
+      <div class="glass-card" style="padding:26px">
+        <div style="font-size:36px;margin-bottom:14px">🔬</div>
+        <h3 style="font-weight:700;margin-bottom:8px">Digital Forensics</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">Collecting, preserving, and analysing digital evidence from compromised systems. Memory forensics, disk forensics, network forensics. Tools: Autopsy, Volatility, FTK, Wireshark.</p>
+      </div>
+      <div class="glass-card" style="padding:26px">
+        <div style="font-size:36px;margin-bottom:14px">🛡</div>
+        <h3 style="font-weight:700;margin-bottom:8px">Endpoint Detection & Response</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">Advanced endpoint monitoring and response. Detects malicious behaviour, not just known malware. Platforms: CrowdStrike Falcon, Microsoft Defender, SentinelOne, Carbon Black.</p>
+      </div>
+      <div class="glass-card" style="padding:26px">
+        <div style="font-size:36px;margin-bottom:14px">🧠</div>
+        <h3 style="font-weight:700;margin-bottom:8px">Threat Intelligence</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">Collecting and contextualising data about threat actors, TTPs, and IOCs to proactively defend. Platforms: MISP, OpenCTI, VirusTotal, AlienVault OTX, Recorded Future.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Frameworks ──────────────────────────────── -->
+  <section class="section">
+    <div class="section-header fade-up">
+      <div class="section-label">Frameworks</div>
+      <h2 class="section-title">Essential Blue Team Frameworks</h2>
+    </div>
+    <div class="grid-3 stagger-children">
+      <div class="glass-card border-cyan no-hover" style="padding:28px">
+        <div style="font-size:32px;margin-bottom:12px">🗺</div>
+        <h3 style="font-weight:800;font-size:17px;margin-bottom:8px;color:var(--accent-cyan)">MITRE ATT&CK</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6;margin-bottom:14px">The global knowledge base of adversary tactics and techniques based on real-world observations. Used for threat modelling, detection engineering, and measuring security coverage.</p>
+        <a href="https://attack.mitre.org" class="resource-card-link">attack.mitre.org →</a>
+      </div>
+      <div class="glass-card border-green no-hover" style="padding:28px">
+        <div style="font-size:32px;margin-bottom:12px">📋</div>
+        <h3 style="font-weight:800;font-size:17px;margin-bottom:8px;color:var(--accent-emerald)">NIST CSF</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6;margin-bottom:14px">National Institute of Standards and Technology Cybersecurity Framework. Five core functions: Identify, Protect, Detect, Respond, Recover. The reference standard for enterprise security programs.</p>
+        <a href="https://nist.gov/cyberframework" class="resource-card-link">nist.gov →</a>
+      </div>
+      <div class="glass-card border-amber no-hover" style="padding:28px">
+        <div style="font-size:32px;margin-bottom:12px">🏗</div>
+        <h3 style="font-weight:800;font-size:17px;margin-bottom:8px;color:var(--accent-amber)">CIS Controls</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6;margin-bottom:14px">18 prioritised security controls that provide a prescriptive, prioritised path to improved cyber defence. Practical implementation guide for organisations of all sizes.</p>
+        <a href="https://cisecurity.org/controls" class="resource-card-link">cisecurity.org →</a>
+      </div>
+      <div class="glass-card border-purple no-hover" style="padding:28px">
+        <div style="font-size:32px;margin-bottom:12px">📡</div>
+        <h3 style="font-weight:800;font-size:17px;margin-bottom:8px;color:var(--accent-purple)">Diamond Model</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">A model for analysing cyber intrusions across four key attributes: Adversary, Capability, Infrastructure, and Victim. Helps structure threat intelligence analysis.</p>
+      </div>
+      <div class="glass-card border-pink no-hover" style="padding:28px">
+        <div style="font-size:32px;margin-bottom:12px">⛓</div>
+        <h3 style="font-weight:800;font-size:17px;margin-bottom:8px;color:var(--accent-pink)">Cyber Kill Chain</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">Lockheed Martin's model describing seven phases of a cyberattack: Reconnaissance, Weaponisation, Delivery, Exploitation, Installation, C2, Actions on Objectives. Used to map defensive controls.</p>
+      </div>
+      <div class="glass-card border-cyan no-hover" style="padding:28px">
+        <div style="font-size:32px;margin-bottom:12px">🔺</div>
+        <h3 style="font-weight:800;font-size:17px;margin-bottom:8px;color:var(--accent-cyan)">Pyramid of Pain</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">David Bianco's model showing the relative difficulty of blocking different types of IoCs — Hash values at the bottom (easy to change), TTPs at the top (costly for attackers to change).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Blue Team Tools ─────────────────────────── -->
+  <section class="section">
+    <div class="section-header fade-up">
+      <div class="section-label">Arsenal</div>
+      <h2 class="section-title">Blue Team Toolkit</h2>
+    </div>
+    <div class="grid-auto-sm stagger-children">
+      <div class="tool-card"><div class="tool-card-name">📊 Splunk</div><div class="tool-card-purpose">Industry-leading SIEM and data analytics platform. Powerful SPL query language. Universal in enterprise SOCs.</div><div class="tool-tags"><span class="tag">Commercial/Free</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+      <div class="tool-card"><div class="tool-card-name">⚡ Elastic SIEM</div><div class="tool-card-purpose">Open-source ELK stack with built-in security analytics. Elastic Defend for endpoint, Elastic SIEM for detection.</div><div class="tool-tags"><span class="tag">Free/Commercial</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+      <div class="tool-card"><div class="tool-card-name">🦈 Wireshark</div><div class="tool-card-purpose">The definitive network protocol analyser. Capture and inspect packet-level traffic for investigation.</div><div class="tool-tags"><span class="tag">Free</span><span class="badge badge-beginner">Beginner</span></div></div>
+      <div class="tool-card"><div class="tool-card-name">🐦 Zeek (Bro)</div><div class="tool-card-purpose">Network traffic analyser producing detailed connection logs. Excellent for network forensics and detection.</div><div class="tool-tags"><span class="tag">Free</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+      <div class="tool-card"><div class="tool-card-name">🔒 Snort</div><div class="tool-card-purpose">Open-source intrusion detection/prevention system. Rule-based network monitoring. Industry standard IDS.</div><div class="tool-tags"><span class="tag">Free</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+      <div class="tool-card"><div class="tool-card-name">🏃 Velociraptor</div><div class="tool-card-purpose">Endpoint forensics and monitoring at scale. Excellent for threat hunting and incident response collection.</div><div class="tool-tags"><span class="tag">Free</span><span class="badge badge-pro">Pro</span></div></div>
+      <div class="tool-card"><div class="tool-card-name">🧠 MISP</div><div class="tool-card-purpose">Malware Information Sharing Platform. Collaborative threat intelligence sharing and consumption.</div><div class="tool-tags"><span class="tag">Free</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+      <div class="tool-card"><div class="tool-card-name">🐝 TheHive</div><div class="tool-card-purpose">Security incident response platform. Collaborative case management for SOC teams.</div><div class="tool-tags"><span class="tag">Free</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+      <div class="tool-card"><div class="tool-card-name">🧪 Volatility</div><div class="tool-card-purpose">Memory forensics framework for analysing RAM dumps. Detect malware, extract artefacts from running processes.</div><div class="tool-tags"><span class="tag">Free</span><span class="badge badge-pro">Pro</span></div></div>
+      <div class="tool-card"><div class="tool-card-name">🔎 Autopsy</div><div class="tool-card-purpose">Digital forensics platform for disk image analysis. GUI frontend for Sleuth Kit. Great for beginners.</div><div class="tool-tags"><span class="tag">Free</span><span class="badge badge-beginner">Beginner</span></div></div>
+      <div class="tool-card"><div class="tool-card-name">🦅 CrowdStrike Falcon</div><div class="tool-card-purpose">Industry-leading EDR/XDR platform. AI-powered threat detection and automated response capabilities.</div><div class="tool-tags"><span class="tag">Commercial</span><span class="badge badge-pro">Pro</span></div></div>
+      <div class="tool-card"><div class="tool-card-name">🟦 Microsoft Sentinel</div><div class="tool-card-purpose">Cloud-native SIEM/SOAR from Microsoft. Deep Azure/M365 integration. Growing fast in enterprise.</div><div class="tool-tags"><span class="tag">Commercial</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+    </div>
+  </section>
+
+  <!-- ─── Incident Response Playbook ─────────────── -->
+  <section class="section">
+    <div class="section-header fade-up">
+      <div class="section-label">Process</div>
+      <h2 class="section-title">Incident Response Lifecycle</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:14px" class="stagger-children">
+      <div class="step-card"><div class="step-number">1</div><div class="step-content"><h3>Preparation</h3><p>Build IR playbooks, deploy detection tools, train team, establish communication channels, maintain asset inventories and contact lists. Test IR plans regularly with tabletop exercises.</p></div></div>
+      <div class="step-card"><div class="step-number">2</div><div class="step-content"><h3>Identification</h3><p>Determine if an incident has occurred. Analyse alerts, logs, and indicators. Classify severity. Determine scope — how many systems are affected? Is data being exfiltrated?</p></div></div>
+      <div class="step-card"><div class="step-number">3</div><div class="step-content"><h3>Containment</h3><p>Short-term: isolate affected systems to stop spread. Long-term: patch vulnerabilities, change credentials. Preserve evidence before containment actions. Document all steps.</p></div></div>
+      <div class="step-card"><div class="step-number">4</div><div class="step-content"><h3>Eradication</h3><p>Remove the threat completely — malware, backdoors, persistence mechanisms, rogue accounts. Identify root cause. Ensure the adversary has no remaining access.</p></div></div>
+      <div class="step-card"><div class="step-number">5</div><div class="step-content"><h3>Recovery</h3><p>Restore systems from clean backups. Validate integrity. Monitor closely for signs of re-compromise. Gradually return to normal operations.</p></div></div>
+      <div class="step-card"><div class="step-number">6</div><div class="step-content"><h3>Lessons Learned</h3><p>Post-incident review within 2 weeks. What happened? What worked? What didn't? Update playbooks, improve detection rules, brief stakeholders, remediate systemic weaknesses.</p></div></div>
+    </div>
+  </section>
+
+  <!-- ─── Resources ──────────────────────────────── -->
+  <section class="section">
+    <div class="section-header fade-up">
+      <div class="section-label">Learning Resources</div>
+      <h2 class="section-title">Blue Team Resources by Level</h2>
+    </div>
+    <div data-tabs style="max-width:900px;margin:0 auto">
+      <div class="tab-group">
+        <button class="tab-btn active" data-tab="beginner">🌱 Beginner</button>
+        <button class="tab-btn" data-tab="intermediate">📈 Intermediate</button>
+        <button class="tab-btn" data-tab="pro">⚡ Pro</button>
+      </div>
+      <div class="tab-panel active" data-panel="beginner">
+        <div class="grid-auto stagger-children">
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-green">🎮</div><span class="badge badge-beginner">Beginner</span></div><div class="resource-card-title">TryHackMe — SOC Level 1</div><div class="resource-card-desc">Dedicated SOC analyst learning path — SIEM, log analysis, phishing investigation, and alert triage for beginners.</div><a href="https://tryhackme.com/path/outline/soclevel1" class="resource-card-link">tryhackme.com →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-green">🎥</div><span class="badge badge-beginner">Beginner</span></div><div class="resource-card-title">NetworkChuck — YouTube</div><div class="resource-card-desc">Engaging, beginner-friendly videos on networking, Linux, Wireshark, and cybersecurity fundamentals.</div><a href="https://youtube.com/@NetworkChuck" class="resource-card-link">youtube.com/@NetworkChuck →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-green">📚</div><span class="badge badge-beginner">Beginner</span></div><div class="resource-card-title">Cybrary — SOC Analyst Career Path</div><div class="resource-card-desc">Structured video curriculum covering SOC fundamentals, SIEM basics, and incident response for career starters.</div><a href="https://cybrary.it" class="resource-card-link">cybrary.it →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-green">🗺</div><span class="badge badge-beginner">Beginner</span></div><div class="resource-card-title">MITRE ATT&CK Navigator</div><div class="resource-card-desc">Visual mapping of threat actor TTPs. Understanding ATT&CK is fundamental for any blue team role.</div><a href="https://attack.mitre.org" class="resource-card-link">attack.mitre.org →</a></div>
+        </div>
+      </div>
+      <div class="tab-panel" data-panel="intermediate">
+        <div class="grid-auto stagger-children">
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-amber">🎓</div><span class="badge badge-intermediate">Intermediate</span></div><div class="resource-card-title">CompTIA CySA+</div><div class="resource-card-desc">Cybersecurity Analyst certification — detection, analysis, and response. The primary cert for SOC analysts.</div><a href="https://comptia.org/certifications/cybersecurity-analyst" class="resource-card-link">comptia.org →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-amber">🔍</div><span class="badge badge-intermediate">Intermediate</span></div><div class="resource-card-title">Blue Team Labs Online</div><div class="resource-card-desc">Hands-on incident response and forensics challenges. Perfect for practising real blue team workflows.</div><a href="https://blueteamlabs.online" class="resource-card-link">blueteamlabs.online →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-amber">📖</div><span class="badge badge-intermediate">Intermediate</span></div><div class="resource-card-title">The Practice of Network Security Monitoring</div><div class="resource-card-desc">Richard Bejtlich's definitive guide to NSM. Everything from tool setup to detection methodology.</div><a href="https://nostarch.com/nsm" class="resource-card-link">nostarch.com →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-amber">🛡</div><span class="badge badge-intermediate">Intermediate</span></div><div class="resource-card-title">LetsDefend</div><div class="resource-card-desc">SOC analyst simulation platform. Work real alerts in a simulated SOC environment with cases and feedback.</div><a href="https://letsdefend.io" class="resource-card-link">letsdefend.io →</a></div>
+        </div>
+      </div>
+      <div class="tab-panel" data-panel="pro">
+        <div class="grid-auto stagger-children">
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-purple">🏆</div><span class="badge badge-pro">Pro</span></div><div class="resource-card-title">GCIH — GIAC Incident Handler</div><div class="resource-card-desc">SANS-backed incident handling cert. Covers the full incident response lifecycle with proven methodology.</div><a href="https://giac.org/certifications/certified-incident-handler-gcih" class="resource-card-link">giac.org →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-purple">🔬</div><span class="badge badge-pro">Pro</span></div><div class="resource-card-title">FOR508 — SANS Advanced Forensics</div><div class="resource-card-desc">SANS course in advanced incident response and threat hunting. Expensive but industry-elite training.</div><a href="https://sans.org/cyber-security-courses/advanced-incident-response-threat-hunting-training" class="resource-card-link">sans.org →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-purple">🧠</div><span class="badge badge-pro">Pro</span></div><div class="resource-card-title">GREM — GIAC Reverse Engineering Malware</div><div class="resource-card-desc">Advanced malware analysis certification from SANS/GIAC. Essential for threat intel and hunting roles.</div><a href="https://giac.org/certifications/reverse-engineering-malware-grem" class="resource-card-link">giac.org →</a></div>
+          <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-purple">📖</div><span class="badge badge-pro">Pro</span></div><div class="resource-card-title">The Art of Memory Forensics</div><div class="resource-card-desc">The definitive text on memory forensics — Volatility framework, detecting rootkits, malware analysis from RAM.</div><a href="https://memoryanalysis.net" class="resource-card-link">memoryanalysis.net →</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Certifications ──────────────────────────── -->
+  <section class="section">
+    <div class="section-header fade-up">
+      <div class="section-label">Credentials</div>
+      <h2 class="section-title">Blue Team Certifications</h2>
+    </div>
+    <div class="grid-3 stagger-children">
+      <div class="cert-card border-green"><div class="badge badge-beginner" style="margin-bottom:12px">Beginner</div><div class="cert-name">CompTIA Security+</div><div class="cert-issuer">CompTIA</div><div class="cert-desc">Baseline knowledge cert covering threats, detection, response, and security architecture fundamentals.</div><div class="cert-meta"><div class="cert-meta-item"><div class="cert-meta-label">Cost</div><div class="cert-meta-value">~$400</div></div><div class="cert-meta-item"><div class="cert-meta-label">Prep Time</div><div class="cert-meta-value">2–4 months</div></div></div></div>
+      <div class="cert-card border-green"><div class="badge badge-beginner" style="margin-bottom:12px">Beginner</div><div class="cert-name">CompTIA Network+</div><div class="cert-issuer">CompTIA</div><div class="cert-desc">Networking fundamentals essential for any SOC analyst role — subnets, protocols, traffic analysis.</div><div class="cert-meta"><div class="cert-meta-item"><div class="cert-meta-label">Cost</div><div class="cert-meta-value">~$369</div></div><div class="cert-meta-item"><div class="cert-meta-label">Prep Time</div><div class="cert-meta-value">2–3 months</div></div></div></div>
+      <div class="cert-card border-amber"><div class="badge badge-intermediate" style="margin-bottom:12px">Intermediate</div><div class="cert-name">CompTIA CySA+</div><div class="cert-issuer">CompTIA</div><div class="cert-desc">Cybersecurity analyst cert focused on threat detection and response. Preferred by many SOC hiring managers.</div><div class="cert-meta"><div class="cert-meta-item"><div class="cert-meta-label">Cost</div><div class="cert-meta-value">~$400</div></div><div class="cert-meta-item"><div class="cert-meta-label">Prep Time</div><div class="cert-meta-value">3–5 months</div></div></div></div>
+      <div class="cert-card border-amber"><div class="badge badge-intermediate" style="margin-bottom:12px">Intermediate</div><div class="cert-name">GSOC</div><div class="cert-issuer">GIAC / SANS</div><div class="cert-desc">GIAC Security Operations Certified. Validates SOC analyst skills at an intermediate professional level.</div><div class="cert-meta"><div class="cert-meta-item"><div class="cert-meta-label">Cost</div><div class="cert-meta-value">~$949</div></div><div class="cert-meta-item"><div class="cert-meta-label">Prep Time</div><div class="cert-meta-value">3–6 months</div></div></div></div>
+      <div class="cert-card border-purple"><div class="badge badge-pro" style="margin-bottom:12px">Pro</div><div class="cert-name">GCIH</div><div class="cert-issuer">GIAC / SANS</div><div class="cert-desc">GIAC Certified Incident Handler. SANS-quality, highly respected in enterprise incident response roles.</div><div class="cert-meta"><div class="cert-meta-item"><div class="cert-meta-label">Cost</div><div class="cert-meta-value">~$949 + course</div></div><div class="cert-meta-item"><div class="cert-meta-label">Prep Time</div><div class="cert-meta-value">4–6 months</div></div></div></div>
+      <div class="cert-card border-purple"><div class="badge badge-pro" style="margin-bottom:12px">Pro</div><div class="cert-name">CISSP</div><div class="cert-issuer">ISC²</div><div class="cert-desc">The gold standard for security management. 5-year experience requirement. Opens doors to CISO and director roles.</div><div class="cert-meta"><div class="cert-meta-item"><div class="cert-meta-label">Cost</div><div class="cert-meta-value">~$749</div></div><div class="cert-meta-item"><div class="cert-meta-label">Prep Time</div><div class="cert-meta-value">6–12 months</div></div></div></div>
+    </div>
+    <div style="text-align:center;margin-top:32px"><a href="certifications.html" class="btn btn-glass">View All Certifications →</a></div>
+  </section>
+
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding for CyberSec — CyberHub</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="page-content">
+
+  <div class="page-hero">
+    <div class="hero-eyebrow"><span class="dot" style="background:var(--accent-cyan)"></span>10 Languages Analysed</div>
+    <h1 class="page-hero-title"><span class="gradient-text">Coding for</span><br>Cybersecurity</h1>
+    <p class="page-hero-desc">Which languages matter in security, why they matter, how hard they are to learn, and exactly where each one fits in the practitioner's toolkit — from beginner to elite.</p>
+    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+      <span class="badge badge-beginner">Beginner</span>
+      <span class="badge badge-intermediate">Intermediate</span>
+      <span class="badge badge-pro">Pro</span>
+    </div>
+  </div>
+
+  <!-- ─── Why Code? ─────────────────────────────────── -->
+  <section class="section" style="padding-top:0">
+    <div class="grid-2">
+      <div class="glass-card no-hover" style="padding:32px">
+        <h3 style="font-size:18px;font-weight:800;margin-bottom:14px;color:var(--accent-cyan)">Do You NEED to Code?</h3>
+        <p style="color:var(--text-secondary);line-height:1.7;font-size:14.5px;margin-bottom:16px">Not every cybersecurity role requires coding. A Tier 1 SOC analyst can succeed with minimal scripting. But coding unlocks significantly higher-paying roles, deeper understanding of attacks, and the ability to build and customise tools.</p>
+        <p style="color:var(--text-secondary);line-height:1.7;font-size:14.5px">In competitive roles — penetration testing, malware analysis, red team, exploit development, and threat intelligence — coding is not optional. The more senior the role, the more critical the skill.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div class="info-panel border-cyan">
+          <h4 style="font-weight:700;margin-bottom:10px;color:var(--accent-cyan)">Where coding adds most value:</h4>
+          <ul class="styled-list">
+            <li>Automating repetitive tasks (recon, scanning, reporting)</li>
+            <li>Writing custom exploits and payloads</li>
+            <li>Developing security tools and scripts</li>
+            <li>Understanding how vulnerabilities work at the code level</li>
+            <li>Reverse engineering malware and analysing code</li>
+            <li>Detecting attacks through code analysis (SAST/DAST)</li>
+            <li>Bug bounty — understanding app logic requires reading code</li>
+          </ul>
+        </div>
+        <div class="info-panel border-green">
+          <h4 style="font-weight:700;margin-bottom:8px;color:var(--accent-emerald)">🎯 Start with Python</h4>
+          <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">If you're unsure where to start — Python first. It's the most widely used language in cybersecurity, has the richest ecosystem of security libraries, and is beginner-friendly. Add Bash next, then branch based on your specialisation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Language Cards ────────────────────────────── -->
+  <section class="section">
+    <div class="section-header fade-up">
+      <div class="section-label">Language Analysis</div>
+      <h2 class="section-title">Languages & Their Role in CyberSec</h2>
+    </div>
+
+    <!-- Python -->
+    <div class="lang-card mb-32 fade-up">
+      <div class="lang-card-header">
+        <div class="lang-icon icon-bg-cyan" style="font-size:32px">🐍</div>
+        <div>
+          <div class="lang-card-title gradient-text">Python</div>
+          <div class="lang-card-subtitle">The Swiss Army Knife of CyberSec</div>
+        </div>
+        <div style="margin-left:auto;display:flex;flex-direction:column;gap:6px;align-items:flex-end">
+          <span class="badge badge-beginner">Beginner Friendly</span>
+          <span class="badge badge-all">Most Used in CyberSec</span>
+        </div>
+      </div>
+      <div class="lang-card-body">
+        <div class="lang-section">
+          <div class="lang-section-title">Purpose in CyberSec</div>
+          <div class="lang-desc">Automation, exploit scripting, tool development, network scanning, web scraping/OSINT, malware analysis, C2 framework development, CTF challenges, machine learning for security, API testing, and custom payload creation. The most versatile language in the field.</div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Difficulty</div>
+          <div class="difficulty-bar">
+            <span class="difficulty-label" style="color:var(--beginner-color)">Beginner</span>
+            <div class="difficulty-track"><div class="difficulty-fill" data-width="25%" style="background:var(--beginner-color);width:0"></div></div>
+          </div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Pros vs Cons in CyberSec</div>
+          <div class="pros-cons">
+            <div class="pros"><div class="pros-title">Pros</div><ul><li>Largest security library ecosystem (Scapy, Impacket, Requests, PyCryptodome)</li><li>Rapid prototyping — scripts in minutes</li><li>Readable, easy to share and maintain</li><li>Metasploit modules can be written in Python</li><li>Strong community and resources</li><li>Runs everywhere</li></ul></div>
+            <div class="cons"><div class="cons-title">Cons</div><ul><li>Slower than compiled languages</li><li>Not ideal for kernel-level or low-level tasks</li><li>GIL limits true multi-threading</li><li>Easy to write insecure Python code</li><li>Not suitable for shellcode writing</li></ul></div>
+          </div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Key Libraries & Tools</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px"><span class="tag">Scapy (packets)</span><span class="tag">Requests (HTTP)</span><span class="tag">Impacket (SMB/AD)</span><span class="tag">PyCryptodome</span><span class="tag">Paramiko (SSH)</span><span class="tag">BeautifulSoup</span><span class="tag">Socket</span><span class="tag">Subprocess</span></div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Resources by Level</div>
+          <div class="grid-3" style="gap:12px">
+            <div class="info-panel" style="padding:14px"><div class="badge badge-beginner" style="margin-bottom:8px">Beginner</div><div style="font-size:13px;font-weight:600;margin-bottom:4px">Automate the Boring Stuff</div><p style="font-size:12px;color:var(--text-secondary)">Free book by Al Sweigart. Practical Python from scratch.</p><a href="https://automatetheboringstuff.com" class="resource-card-link" style="font-size:11px">automatetheboringstuff.com →</a></div>
+            <div class="info-panel" style="padding:14px"><div class="badge badge-intermediate" style="margin-bottom:8px">Intermediate</div><div style="font-size:13px;font-weight:600;margin-bottom:4px">Black Hat Python</div><p style="font-size:12px;color:var(--text-secondary)">Justin Seitz. Python for security professionals — network tools, exploits, forensics.</p></div>
+            <div class="info-panel" style="padding:14px"><div class="badge badge-pro" style="margin-bottom:8px">Pro</div><div style="font-size:13px;font-weight:600;margin-bottom:4px">Violent Python</div><p style="font-size:12px;color:var(--text-secondary)">TJ O'Connor. Advanced offensive Python — forensics tools, network analysis, exploits.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bash -->
+    <div class="lang-card mb-32 fade-up">
+      <div class="lang-card-header">
+        <div class="lang-icon icon-bg-green" style="font-size:32px">💻</div>
+        <div>
+          <div class="lang-card-title gradient-text-green">Bash / Shell</div>
+          <div class="lang-card-subtitle">The Language of Linux Administration</div>
+        </div>
+        <div style="margin-left:auto"><span class="badge badge-beginner">Beginner Friendly</span></div>
+      </div>
+      <div class="lang-card-body">
+        <div class="lang-section">
+          <div class="lang-section-title">Purpose in CyberSec</div>
+          <div class="lang-desc">Automating reconnaissance, chaining tools together, post-exploitation persistence, reverse shells, log analysis, quick data manipulation, cron jobs, and system administration tasks. The native language of Linux/macOS. Essential for every practitioner.</div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Difficulty</div>
+          <div class="difficulty-bar">
+            <span class="difficulty-label" style="color:var(--beginner-color)">Beginner</span>
+            <div class="difficulty-track"><div class="difficulty-fill" data-width="30%" style="background:var(--beginner-color);width:0"></div></div>
+          </div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Pros vs Cons in CyberSec</div>
+          <div class="pros-cons">
+            <div class="pros"><div class="pros-title">Pros</div><ul><li>Native on every Linux/Unix/macOS system</li><li>No installation required</li><li>Excellent for gluing tools together via pipes</li><li>Quick one-liners for data processing</li><li>Standard for CTF automation</li><li>Reverse shells in one line</li></ul></div>
+            <div class="cons"><div class="cons-title">Cons</div><ul><li>Error-prone for complex logic</li><li>Windows-only environments require WSL or alternative</li><li>Difficult to debug</li><li>Not suitable for complex data structures</li><li>Quoting and escaping pitfalls</li></ul></div>
+          </div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Resources by Level</div>
+          <div class="grid-3" style="gap:12px">
+            <div class="info-panel" style="padding:14px"><div class="badge badge-beginner" style="margin-bottom:8px">Beginner</div><div style="font-size:13px;font-weight:600;margin-bottom:4px">OverTheWire: Bandit</div><p style="font-size:12px;color:var(--text-secondary)">Free wargame. Learn Linux and Bash through hands-on puzzles.</p><a href="https://overthewire.org/wargames/bandit" class="resource-card-link" style="font-size:11px">overthewire.org →</a></div>
+            <div class="info-panel" style="padding:14px"><div class="badge badge-intermediate" style="margin-bottom:8px">Intermediate</div><div style="font-size:13px;font-weight:600;margin-bottom:4px">The Linux Command Line (TLCL)</div><p style="font-size:12px;color:var(--text-secondary)">William Shotts. Free online. Comprehensive Bash and CLI guide.</p><a href="https://linuxcommand.org/tlcl.php" class="resource-card-link" style="font-size:11px">linuxcommand.org →</a></div>
+            <div class="info-panel" style="padding:14px"><div class="badge badge-pro" style="margin-bottom:8px">Pro</div><div style="font-size:13px;font-weight:600;margin-bottom:4px">Bash Scripting for Pentesters</div><p style="font-size:12px;color:var(--text-secondary)">TCM Security course. Security-focused Bash automation and tool development.</p><a href="https://academy.tcm-sec.com" class="resource-card-link" style="font-size:11px">tcm-sec.com →</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PowerShell -->
+    <div class="lang-card mb-32 fade-up">
+      <div class="lang-card-header">
+        <div class="lang-icon icon-bg-blue" style="font-size:32px">🔷</div>
+        <div>
+          <div class="lang-card-title" style="background:linear-gradient(135deg,#3b82f6,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">PowerShell</div>
+          <div class="lang-card-subtitle">Dominant in Windows & Enterprise Red Teaming</div>
+        </div>
+        <div style="margin-left:auto"><span class="badge badge-intermediate">Intermediate</span></div>
+      </div>
+      <div class="lang-card-body">
+        <div class="lang-section">
+          <div class="lang-section-title">Purpose in CyberSec</div>
+          <div class="lang-desc">Windows system administration, Active Directory management, post-exploitation (living-off-the-land), payload delivery, security automation on Windows, Windows event log analysis, and writing Metasploit/PowerSploit payloads. Many modern malware families use PowerShell for execution.</div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Difficulty</div>
+          <div class="difficulty-bar">
+            <span class="difficulty-label" style="color:var(--intermediate-color)">Intermediate</span>
+            <div class="difficulty-track"><div class="difficulty-fill" data-width="45%" style="background:var(--intermediate-color);width:0"></div></div>
+          </div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Pros vs Cons in CyberSec</div>
+          <div class="pros-cons">
+            <div class="pros"><div class="pros-title">Pros</div><ul><li>Deep Windows/Active Directory integration</li><li>Access to full .NET framework</li><li>Native on all modern Windows</li><li>PowerSploit/PowerView for AD attacks</li><li>Living-off-the-land: no new tools needed</li><li>Excellent for LOLBAS techniques</li></ul></div>
+            <div class="cons"><div class="cons-title">Cons</div><ul><li>Windows-centric (limited cross-platform)</li><li>Verbose, less elegant than Python/Bash</li><li>Increasingly monitored/blocked by EDR</li><li>AMSI (anti-malware scan interface) scrutinises it</li><li>Constrained Language Mode in enterprise</li></ul></div>
+          </div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Resources by Level</div>
+          <div class="grid-3" style="gap:12px">
+            <div class="info-panel" style="padding:14px"><div class="badge badge-beginner" style="margin-bottom:8px">Beginner</div><div style="font-size:13px;font-weight:600;margin-bottom:4px">Learn PowerShell in a Month of Lunches</div><p style="font-size:12px;color:var(--text-secondary)">Jones & Hicks. The gold standard PowerShell learning book. Structured 30-day approach.</p></div>
+            <div class="info-panel" style="padding:14px"><div class="badge badge-intermediate" style="margin-bottom:8px">Intermediate</div><div style="font-size:13px;font-weight:600;margin-bottom:4px">PowerSploit / PowerView</div><p style="font-size:12px;color:var(--text-secondary)">Study the source code of PowerSploit and PowerView — real AD attack scripts to learn from.</p><a href="https://github.com/PowerShellMafia/PowerSploit" class="resource-card-link" style="font-size:11px">github.com →</a></div>
+            <div class="info-panel" style="padding:14px"><div class="badge badge-pro" style="margin-bottom:8px">Pro</div><div style="font-size:13px;font-weight:600;margin-bottom:4px">TCM Security — Practical AD Attacks</div><p style="font-size:12px;color:var(--text-secondary)">Covers PowerShell-based AD enumeration, attacks, and post-exploitation in depth.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- C / C++ -->
+    <div class="lang-card mb-32 fade-up">
+      <div class="lang-card-header">
+        <div class="lang-icon icon-bg-red" style="font-size:32px">⚙️</div>
+        <div>
+          <div class="lang-card-title gradient-text-red">C / C++</div>
+          <div class="lang-card-subtitle">The Language of Exploits and the OS Itself</div>
+        </div>
+        <div style="margin-left:auto"><span class="badge badge-pro">Pro Level</span></div>
+      </div>
+      <div class="lang-card-body">
+        <div class="lang-section">
+          <div class="lang-section-title">Purpose in CyberSec</div>
+          <div class="lang-desc">Exploit development, shellcode writing, kernel exploits, malware development (most real-world malware is written in C/C++), custom implants, rootkits, reverse engineering (understanding disassembled code), and operating system internals. The foundation of low-level security work.</div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Difficulty</div>
+          <div class="difficulty-bar">
+            <span class="difficulty-label" style="color:var(--accent-red)">Hard</span>
+            <div class="difficulty-track"><div class="difficulty-fill" data-width="80%" style="background:var(--accent-red);width:0"></div></div>
+          </div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Pros vs Cons in CyberSec</div>
+          <div class="pros-cons">
+            <div class="pros"><div class="pros-title">Pros</div><ul><li>Direct memory manipulation</li><li>Most malware is written in C/C++</li><li>Essential for reading RE output</li><li>Kernel-level programming capability</li><li>Maximum performance and control</li><li>Shellcode can be written directly</li></ul></div>
+            <div class="cons"><div class="cons-title">Cons</div><ul><li>Very steep learning curve</li><li>Manual memory management → vulnerabilities</li><li>Slow development cycle</li><li>Platform-specific compilation needed</li><li>Undefined behaviour is common pitfall</li></ul></div>
+          </div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Resources by Level</div>
+          <div class="grid-3" style="gap:12px">
+            <div class="info-panel" style="padding:14px"><div class="badge badge-beginner" style="margin-bottom:8px">Beginner</div><div style="font-size:13px;font-weight:600;margin-bottom:4px">CS50 — Harvard (Free)</div><p style="font-size:12px;color:var(--text-secondary)">World-class free intro to C programming. The best starting point for learning C.</p><a href="https://cs50.harvard.edu" class="resource-card-link" style="font-size:11px">cs50.harvard.edu →</a></div>
+            <div class="info-panel" style="padding:14px"><div class="badge badge-intermediate" style="margin-bottom:8px">Intermediate</div><div style="font-size:13px;font-weight:600;margin-bottom:4px">Hacking: The Art of Exploitation</div><p style="font-size:12px;color:var(--text-secondary)">Jon Erickson. C, memory layout, shellcode, and exploitation explained from first principles.</p></div>
+            <div class="info-panel" style="padding:14px"><div class="badge badge-pro" style="margin-bottom:8px">Pro</div><div style="font-size:13px;font-weight:600;margin-bottom:4px">pwn.college</div><p style="font-size:12px;color:var(--text-secondary)">Binary exploitation curriculum — requires strong C/C++ and assembly knowledge.</p><a href="https://pwn.college" class="resource-card-link" style="font-size:11px">pwn.college →</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Go -->
+    <div class="lang-card mb-32 fade-up">
+      <div class="lang-card-header">
+        <div class="lang-icon icon-bg-cyan" style="font-size:32px">🐹</div>
+        <div>
+          <div class="lang-card-title gradient-text">Go (Golang)</div>
+          <div class="lang-card-subtitle">The Modern Tool-Builder's Language</div>
+        </div>
+        <div style="margin-left:auto"><span class="badge badge-intermediate">Intermediate</span></div>
+      </div>
+      <div class="lang-card-body">
+        <div class="lang-section">
+          <div class="lang-section-title">Purpose in CyberSec</div>
+          <div class="lang-desc">Building offensive security tools, C2 frameworks (Sliver, Merlin, Havoc agent), network scanners (Naabu, Nuclei), web security tools, and custom implants. Go compiles to a single cross-platform binary — ideal for red team tool distribution with no dependencies.</div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Difficulty</div>
+          <div class="difficulty-bar">
+            <span class="difficulty-label" style="color:var(--intermediate-color)">Intermediate</span>
+            <div class="difficulty-track"><div class="difficulty-fill" data-width="55%" style="background:var(--intermediate-color);width:0"></div></div>
+          </div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Pros vs Cons in CyberSec</div>
+          <div class="pros-cons">
+            <div class="pros"><div class="pros-title">Pros</div><ul><li>Cross-compiles to single static binary</li><li>Fast — near C performance</li><li>Goroutines for concurrent network tools</li><li>Growing C2 ecosystem (Sliver, Merlin)</li><li>ProjectDiscovery tools all written in Go</li><li>Simpler than C/C++</li></ul></div>
+            <div class="cons"><div class="cons-title">Cons</div><ul><li>Less mature cybersec library ecosystem vs Python</li><li>Larger binary sizes (historically)</li><li>Less community resources for security specifically</li><li>No generics until recently</li></ul></div>
+          </div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Resources by Level</div>
+          <div class="grid-3" style="gap:12px">
+            <div class="info-panel" style="padding:14px"><div class="badge badge-beginner" style="margin-bottom:8px">Beginner</div><div style="font-size:13px;font-weight:600;margin-bottom:4px">Tour of Go</div><p style="font-size:12px;color:var(--text-secondary)">Official interactive Go tutorial. Free, browser-based, comprehensive.</p><a href="https://tour.golang.org" class="resource-card-link" style="font-size:11px">tour.golang.org →</a></div>
+            <div class="info-panel" style="padding:14px"><div class="badge badge-intermediate" style="margin-bottom:8px">Intermediate</div><div style="font-size:13px;font-weight:600;margin-bottom:4px">Black Hat Go</div><p style="font-size:12px;color:var(--text-secondary)">Tom Steele et al. Go for offensive security — network tools, packet analysis, exploitation.</p></div>
+            <div class="info-panel" style="padding:14px"><div class="badge badge-pro" style="margin-bottom:8px">Pro</div><div style="font-size:13px;font-weight:600;margin-bottom:4px">Sliver C2 Source Code</div><p style="font-size:12px;color:var(--text-secondary)">Study Sliver's source code to understand professional-grade offensive Go development.</p><a href="https://github.com/BishopFox/sliver" class="resource-card-link" style="font-size:11px">github.com →</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <div class="lang-card mb-32 fade-up">
+      <div class="lang-card-header">
+        <div class="lang-icon icon-bg-amber" style="font-size:32px">🌐</div>
+        <div>
+          <div class="lang-card-title gradient-text-amber">JavaScript</div>
+          <div class="lang-card-subtitle">Essential for Web Application Security</div>
+        </div>
+        <div style="margin-left:auto"><span class="badge badge-beginner">Beginner Friendly</span></div>
+      </div>
+      <div class="lang-card-body">
+        <div class="lang-section">
+          <div class="lang-section-title">Purpose in CyberSec</div>
+          <div class="lang-desc">Web application security testing (XSS, CSRF, browser exploitation), building web-based tools, Node.js security tool development, phishing page creation, browser extension development, and understanding client-side attack surfaces. Essential for any web-focused security role.</div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Difficulty</div>
+          <div class="difficulty-bar">
+            <span class="difficulty-label" style="color:var(--beginner-color)">Moderate</span>
+            <div class="difficulty-track"><div class="difficulty-fill" data-width="40%" style="background:var(--beginner-color);width:0"></div></div>
+          </div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Pros vs Cons in CyberSec</div>
+          <div class="pros-cons">
+            <div class="pros"><div class="pros-title">Pros</div><ul><li>Essential for understanding XSS and DOM attacks</li><li>Browser-native — no install needed</li><li>Node.js for server-side tools</li><li>Universal web technology knowledge</li><li>Required for web bug bounty</li></ul></div>
+            <div class="cons"><div class="cons-title">Cons</div><ul><li>Limited OS-level access from browser</li><li>Complex async/event-loop model</li><li>Not useful for binary exploitation</li><li>Security model limits many attack primitives</li></ul></div>
+          </div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Resources by Level</div>
+          <div class="grid-3" style="gap:12px">
+            <div class="info-panel" style="padding:14px"><div class="badge badge-beginner" style="margin-bottom:8px">Beginner</div><div style="font-size:13px;font-weight:600;margin-bottom:4px">javascript.info</div><p style="font-size:12px;color:var(--text-secondary)">The best free JavaScript tutorial online. Comprehensive, modern, well-written.</p><a href="https://javascript.info" class="resource-card-link" style="font-size:11px">javascript.info →</a></div>
+            <div class="info-panel" style="padding:14px"><div class="badge badge-intermediate" style="margin-bottom:8px">Intermediate</div><div style="font-size:13px;font-weight:600;margin-bottom:4px">PortSwigger XSS Labs</div><p style="font-size:12px;color:var(--text-secondary)">Real XSS exploitation labs requiring JavaScript knowledge. Free, hands-on.</p><a href="https://portswigger.net/web-security/cross-site-scripting" class="resource-card-link" style="font-size:11px">portswigger.net →</a></div>
+            <div class="info-panel" style="padding:14px"><div class="badge badge-pro" style="margin-bottom:8px">Pro</div><div style="font-size:13px;font-weight:600;margin-bottom:4px">Browser Hacking (LiveOverflow)</div><p style="font-size:12px;color:var(--text-secondary)">Advanced browser exploitation series on YouTube. Deep JS engine security.</p><a href="https://youtube.com/@LiveOverflow" class="resource-card-link" style="font-size:11px">youtube.com →</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Assembly -->
+    <div class="lang-card mb-32 fade-up">
+      <div class="lang-card-header">
+        <div class="lang-icon icon-bg-purple" style="font-size:32px">🔩</div>
+        <div>
+          <div class="lang-card-title gradient-text">Assembly (x86/x64)</div>
+          <div class="lang-card-subtitle">The Language of the CPU — Required for Elite Work</div>
+        </div>
+        <div style="margin-left:auto"><span class="badge badge-pro">Expert Level</span></div>
+      </div>
+      <div class="lang-card-body">
+        <div class="lang-section">
+          <div class="lang-section-title">Purpose in CyberSec</div>
+          <div class="lang-desc">Reverse engineering compiled binaries, writing shellcode, developing kernel exploits, understanding how compilers generate code, crafting ROP chains, analysing malware at the instruction level, and firmware analysis. Non-negotiable for elite offensive and research roles.</div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Difficulty</div>
+          <div class="difficulty-bar">
+            <span class="difficulty-label" style="color:var(--accent-purple)">Expert</span>
+            <div class="difficulty-track"><div class="difficulty-fill" data-width="95%" style="background:var(--accent-purple);width:0"></div></div>
+          </div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Pros vs Cons in CyberSec</div>
+          <div class="pros-cons">
+            <div class="pros"><div class="pros-title">Pros</div><ul><li>Maximum control over hardware</li><li>Required for shellcode and ROP chains</li><li>Essential for reading disassembly output</li><li>No abstraction — understand exactly what runs</li><li>Kernel and firmware development possible</li></ul></div>
+            <div class="cons"><div class="cons-title">Cons</div><ul><li>Extremely steep learning curve</li><li>Architecture-specific (x86 ≠ ARM ≠ MIPS)</li><li>Verbose — hundreds of lines for simple tasks</li><li>Not suitable for general security scripting</li><li>Years of study to master</li></ul></div>
+          </div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Resources by Level</div>
+          <div class="grid-3" style="gap:12px">
+            <div class="info-panel" style="padding:14px"><div class="badge badge-intermediate" style="margin-bottom:8px">Starting Point</div><div style="font-size:13px;font-weight:600;margin-bottom:4px">x86 Assembly Guide (Virginia)</div><p style="font-size:12px;color:var(--text-secondary)">Free online guide to x86 assembly. Clear, concise introduction to registers and instructions.</p><a href="https://cs.virginia.edu/~evans/cs216/guides/x86.html" class="resource-card-link" style="font-size:11px">cs.virginia.edu →</a></div>
+            <div class="info-panel" style="padding:14px"><div class="badge badge-pro" style="margin-bottom:8px">Pro</div><div style="font-size:13px;font-weight:600;margin-bottom:4px">pwn.college</div><p style="font-size:12px;color:var(--text-secondary)">Binary exploitation curriculum that builds assembly understanding progressively.</p><a href="https://pwn.college" class="resource-card-link" style="font-size:11px">pwn.college →</a></div>
+            <div class="info-panel" style="padding:14px"><div class="badge badge-pro" style="margin-bottom:8px">Pro</div><div style="font-size:13px;font-weight:600;margin-bottom:4px">Shellcode: Windows Internals</div><p style="font-size:12px;color:var(--text-secondary)">Sektor7 Essentials course — writing Windows shellcode from scratch. Highly practical.</p><a href="https://institute.sektor7.net" class="resource-card-link" style="font-size:11px">sektor7.net →</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ruby -->
+    <div class="lang-card mb-32 fade-up">
+      <div class="lang-card-header">
+        <div class="lang-icon icon-bg-red" style="font-size:32px">💎</div>
+        <div>
+          <div class="lang-card-title gradient-text-red">Ruby</div>
+          <div class="lang-card-subtitle">The Language of Metasploit</div>
+        </div>
+        <div style="margin-left:auto"><span class="badge badge-intermediate">Intermediate</span></div>
+      </div>
+      <div class="lang-card-body">
+        <div class="lang-section">
+          <div class="lang-section-title">Purpose in CyberSec</div>
+          <div class="lang-desc">Writing Metasploit modules (the framework is built in Ruby), web application testing automation (Watir), and custom security tool development. Its importance in cybersecurity is largely tied to Metasploit — if you want to write custom Metasploit modules, Ruby is required.</div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Difficulty</div>
+          <div class="difficulty-bar">
+            <span class="difficulty-label" style="color:var(--intermediate-color)">Intermediate</span>
+            <div class="difficulty-track"><div class="difficulty-fill" data-width="50%" style="background:var(--intermediate-color);width:0"></div></div>
+          </div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Pros vs Cons in CyberSec</div>
+          <div class="pros-cons">
+            <div class="pros"><div class="pros-title">Pros</div><ul><li>Metasploit is written in Ruby</li><li>Elegant, readable syntax</li><li>Good for writing custom exploits/modules</li><li>Strong metaprogramming capabilities</li></ul></div>
+            <div class="cons"><div class="cons-title">Cons</div><ul><li>Declining overall popularity</li><li>Smaller security community than Python</li><li>Mainly relevant only for Metasploit</li><li>Python has better library ecosystem</li></ul></div>
+          </div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Resources</div>
+          <div class="grid-2" style="gap:12px">
+            <div class="info-panel" style="padding:14px"><div class="badge badge-beginner" style="margin-bottom:8px">Beginner</div><div style="font-size:13px;font-weight:600;margin-bottom:4px">Ruby in Twenty Minutes</div><p style="font-size:12px;color:var(--text-secondary)">Official Ruby quick-start guide. Fast way to get the basics.</p><a href="https://ruby-lang.org/en/documentation/quickstart" class="resource-card-link" style="font-size:11px">ruby-lang.org →</a></div>
+            <div class="info-panel" style="padding:14px"><div class="badge badge-pro" style="margin-bottom:8px">Pro</div><div style="font-size:13px;font-weight:600;margin-bottom:4px">Metasploit Module Development</div><p style="font-size:12px;color:var(--text-secondary)">Offensive Security's guide to writing Metasploit modules in Ruby.</p><a href="https://docs.metasploit.com" class="resource-card-link" style="font-size:11px">docs.metasploit.com →</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SQL -->
+    <div class="lang-card mb-32 fade-up">
+      <div class="lang-card-header">
+        <div class="lang-icon icon-bg-amber" style="font-size:32px">🗃</div>
+        <div>
+          <div class="lang-card-title gradient-text-amber">SQL</div>
+          <div class="lang-card-subtitle">Non-Negotiable for Web Security</div>
+        </div>
+        <div style="margin-left:auto"><span class="badge badge-beginner">Beginner Friendly</span></div>
+      </div>
+      <div class="lang-card-body">
+        <div class="lang-section">
+          <div class="lang-section-title">Purpose in CyberSec</div>
+          <div class="lang-desc">SQL injection testing and exploitation, database forensics, log analysis using SQL-like queries (Splunk SPL, KQL), understanding how databases store and retrieve data, and writing SIEM queries. SQL injection remains one of the most common and dangerous web vulnerabilities.</div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Difficulty</div>
+          <div class="difficulty-bar">
+            <span class="difficulty-label" style="color:var(--beginner-color)">Beginner</span>
+            <div class="difficulty-track"><div class="difficulty-fill" data-width="20%" style="background:var(--beginner-color);width:0"></div></div>
+          </div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Pros vs Cons in CyberSec</div>
+          <div class="pros-cons">
+            <div class="pros"><div class="pros-title">Pros</div><ul><li>SQL injection is top web vulnerability</li><li>SIEM tools use SQL-like query languages</li><li>Forensic database analysis</li><li>Easy to learn basics quickly</li></ul></div>
+            <div class="cons"><div class="cons-title">Cons</div><ul><li>Limited to database interactions</li><li>Not a general-purpose language</li><li>Database-specific dialects (MySQL vs MSSQL vs PostgreSQL)</li></ul></div>
+          </div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Resources</div>
+          <div class="grid-2" style="gap:12px">
+            <div class="info-panel" style="padding:14px"><div class="badge badge-beginner" style="margin-bottom:8px">Beginner</div><div style="font-size:13px;font-weight:600;margin-bottom:4px">SQLZoo</div><p style="font-size:12px;color:var(--text-secondary)">Free, interactive SQL tutorial. Covers basics to advanced queries.</p><a href="https://sqlzoo.net" class="resource-card-link" style="font-size:11px">sqlzoo.net →</a></div>
+            <div class="info-panel" style="padding:14px"><div class="badge badge-intermediate" style="margin-bottom:8px">Intermediate</div><div style="font-size:13px;font-weight:600;margin-bottom:4px">PortSwigger SQLi Labs</div><p style="font-size:12px;color:var(--text-secondary)">Hands-on SQL injection labs from beginner to advanced. Free, comprehensive.</p><a href="https://portswigger.net/web-security/sql-injection" class="resource-card-link" style="font-size:11px">portswigger.net →</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rust -->
+    <div class="lang-card mb-32 fade-up">
+      <div class="lang-card-header">
+        <div class="lang-icon icon-bg-amber" style="font-size:32px">🦀</div>
+        <div>
+          <div class="lang-card-title gradient-text-amber">Rust</div>
+          <div class="lang-card-subtitle">The Future of Memory-Safe Systems Security</div>
+        </div>
+        <div style="margin-left:auto"><span class="badge badge-pro">Pro / Future Investment</span></div>
+      </div>
+      <div class="lang-card-body">
+        <div class="lang-section">
+          <div class="lang-section-title">Purpose in CyberSec</div>
+          <div class="lang-desc">Building memory-safe security tools, writing malware that avoids common C/C++ pitfalls, developing security-critical software, and the growing area of Rust-based exploit tooling. The NSA, CISA, and White House are actively recommending Rust to replace C/C++ in security-critical code.</div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Difficulty</div>
+          <div class="difficulty-bar">
+            <span class="difficulty-label" style="color:var(--accent-red)">Hard</span>
+            <div class="difficulty-track"><div class="difficulty-fill" data-width="75%" style="background:var(--accent-red);width:0"></div></div>
+          </div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Pros vs Cons in CyberSec</div>
+          <div class="pros-cons">
+            <div class="pros"><div class="pros-title">Pros</div><ul><li>Memory safety by design (no UAF, buffer overflows)</li><li>C-comparable performance</li><li>Government-endorsed for security-critical code</li><li>Cross-compilation like Go</li><li>Growing offensive tool community</li></ul></div>
+            <div class="cons"><div class="cons-title">Cons</div><ul><li>Very steep learning curve (borrow checker)</li><li>Small cybersec ecosystem currently</li><li>Fewer ready-made security libraries</li><li>Niche for now — Python/C still dominate</li></ul></div>
+          </div>
+        </div>
+        <div class="lang-section">
+          <div class="lang-section-title">Resources</div>
+          <div class="grid-2" style="gap:12px">
+            <div class="info-panel" style="padding:14px"><div class="badge badge-intermediate" style="margin-bottom:8px">Starting Point</div><div style="font-size:13px;font-weight:600;margin-bottom:4px">The Rust Book (Free)</div><p style="font-size:12px;color:var(--text-secondary)">The official Rust programming language book. Comprehensive and free online.</p><a href="https://doc.rust-lang.org/book" class="resource-card-link" style="font-size:11px">doc.rust-lang.org →</a></div>
+            <div class="info-panel" style="padding:14px"><div class="badge badge-pro" style="margin-bottom:8px">Pro</div><div style="font-size:13px;font-weight:600;margin-bottom:4px">Offensive Rust (GitHub)</div><p style="font-size:12px;color:var(--text-secondary)">Repository of offensive security techniques implemented in Rust. Excellent reference.</p><a href="https://github.com/trickster0/OffensiveRust" class="resource-card-link" style="font-size:11px">github.com →</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ─── Quick Comparison Table ────────────────────── -->
+  <section class="section">
+    <div class="section-header fade-up">
+      <div class="section-label">At a Glance</div>
+      <h2 class="section-title">Language Comparison Summary</h2>
+    </div>
+    <div class="glass-card no-hover fade-up" style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;font-size:13.5px">
+        <thead>
+          <tr style="border-bottom:1px solid var(--glass-border)">
+            <th style="padding:14px 16px;text-align:left;color:var(--text-tertiary);font-size:11px;text-transform:uppercase;letter-spacing:0.08em;font-weight:700">Language</th>
+            <th style="padding:14px 16px;text-align:left;color:var(--text-tertiary);font-size:11px;text-transform:uppercase;letter-spacing:0.08em;font-weight:700">Difficulty</th>
+            <th style="padding:14px 16px;text-align:left;color:var(--text-tertiary);font-size:11px;text-transform:uppercase;letter-spacing:0.08em;font-weight:700">Primary Use</th>
+            <th style="padding:14px 16px;text-align:left;color:var(--text-tertiary);font-size:11px;text-transform:uppercase;letter-spacing:0.08em;font-weight:700">Priority</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--glass-border)"><td style="padding:12px 16px;font-weight:600">🐍 Python</td><td style="padding:12px 16px"><span class="badge badge-beginner">Low</span></td><td style="padding:12px 16px;color:var(--text-secondary)">Automation, scripting, tools, CTFs</td><td style="padding:12px 16px"><span style="color:var(--accent-emerald);font-weight:700">⭐ Learn First</span></td></tr>
+          <tr style="border-bottom:1px solid var(--glass-border)"><td style="padding:12px 16px;font-weight:600">💻 Bash</td><td style="padding:12px 16px"><span class="badge badge-beginner">Low</span></td><td style="padding:12px 16px;color:var(--text-secondary)">System admin, automation, Linux</td><td style="padding:12px 16px"><span style="color:var(--accent-emerald);font-weight:700">⭐ Learn Second</span></td></tr>
+          <tr style="border-bottom:1px solid var(--glass-border)"><td style="padding:12px 16px;font-weight:600">🌐 JavaScript</td><td style="padding:12px 16px"><span class="badge badge-beginner">Low–Mid</span></td><td style="padding:12px 16px;color:var(--text-secondary)">Web app security, XSS, APIs</td><td style="padding:12px 16px"><span style="color:var(--accent-amber);font-weight:700">Web Focus</span></td></tr>
+          <tr style="border-bottom:1px solid var(--glass-border)"><td style="padding:12px 16px;font-weight:600">🗃 SQL</td><td style="padding:12px 16px"><span class="badge badge-beginner">Low</span></td><td style="padding:12px 16px;color:var(--text-secondary)">SQLi testing, SIEM queries, forensics</td><td style="padding:12px 16px"><span style="color:var(--accent-amber);font-weight:700">Web / Blue Team</span></td></tr>
+          <tr style="border-bottom:1px solid var(--glass-border)"><td style="padding:12px 16px;font-weight:600">🔷 PowerShell</td><td style="padding:12px 16px"><span class="badge badge-intermediate">Medium</span></td><td style="padding:12px 16px;color:var(--text-secondary)">Windows, AD attacks, post-exploit</td><td style="padding:12px 16px"><span style="color:var(--accent-amber);font-weight:700">Windows Focus</span></td></tr>
+          <tr style="border-bottom:1px solid var(--glass-border)"><td style="padding:12px 16px;font-weight:600">🐹 Go</td><td style="padding:12px 16px"><span class="badge badge-intermediate">Medium</span></td><td style="padding:12px 16px;color:var(--text-secondary)">Tool development, C2, scanners</td><td style="padding:12px 16px"><span style="color:var(--accent-amber);font-weight:700">Red Team Tools</span></td></tr>
+          <tr style="border-bottom:1px solid var(--glass-border)"><td style="padding:12px 16px;font-weight:600">💎 Ruby</td><td style="padding:12px 16px"><span class="badge badge-intermediate">Medium</span></td><td style="padding:12px 16px;color:var(--text-secondary)">Metasploit modules</td><td style="padding:12px 16px"><span style="color:var(--text-tertiary);font-weight:700">Metasploit Only</span></td></tr>
+          <tr style="border-bottom:1px solid var(--glass-border)"><td style="padding:12px 16px;font-weight:600">⚙️ C/C++</td><td style="padding:12px 16px"><span class="badge badge-pro">High</span></td><td style="padding:12px 16px;color:var(--text-secondary)">Exploits, malware, kernel, RE</td><td style="padding:12px 16px"><span style="color:var(--accent-purple);font-weight:700">Elite Offensive/RE</span></td></tr>
+          <tr style="border-bottom:1px solid var(--glass-border)"><td style="padding:12px 16px;font-weight:600">🦀 Rust</td><td style="padding:12px 16px"><span class="badge badge-pro">High</span></td><td style="padding:12px 16px;color:var(--text-secondary)">Safe systems, offensive tooling</td><td style="padding:12px 16px"><span style="color:var(--accent-purple);font-weight:700">Future Investment</span></td></tr>
+          <tr><td style="padding:12px 16px;font-weight:600">🔩 Assembly</td><td style="padding:12px 16px"><span class="badge badge-pro">Expert</span></td><td style="padding:12px 16px;color:var(--text-secondary)">Shellcode, RE, exploit dev</td><td style="padding:12px 16px"><span style="color:var(--accent-purple);font-weight:700">Advanced RE/Exploit</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

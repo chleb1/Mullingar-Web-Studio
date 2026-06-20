@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tools & Applications — CyberHub</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="page-content">
+
+  <div class="page-hero">
+    <div class="hero-eyebrow"><span class="dot" style="background:var(--accent-cyan)"></span>The Practitioner's Arsenal</div>
+    <h1 class="page-hero-title"><span class="gradient-text">Tools &</span><br>Applications</h1>
+    <p class="page-hero-desc">100+ security tools across every discipline — network scanning, exploitation, forensics, SIEM, password auditing, and more. Each tagged by level and use case.</p>
+    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+      <span class="badge badge-beginner">Beginner</span>
+      <span class="badge badge-intermediate">Intermediate</span>
+      <span class="badge badge-pro">Pro</span>
+    </div>
+  </div>
+
+  <!-- ─── All Tools by Category ──────────────────────── -->
+  <section class="section" style="padding-top:0">
+    <div data-tabs>
+      <div class="tab-group" style="flex-wrap:wrap">
+        <button class="tab-btn active" data-tab="network">📡 Network</button>
+        <button class="tab-btn" data-tab="webapp">🌐 Web App</button>
+        <button class="tab-btn" data-tab="exploit">💥 Exploitation</button>
+        <button class="tab-btn" data-tab="passwords">🔑 Passwords</button>
+        <button class="tab-btn" data-tab="forensics">🔬 Forensics</button>
+        <button class="tab-btn" data-tab="siem">📊 SIEM/Monitor</button>
+        <button class="tab-btn" data-tab="malware">🦠 Malware</button>
+        <button class="tab-btn" data-tab="wireless">📶 Wireless</button>
+      </div>
+
+      <!-- NETWORK -->
+      <div class="tab-panel active" data-panel="network">
+        <div class="section-header" style="margin-bottom:32px">
+          <h3 class="section-title" style="font-size:28px">Network Scanning & Enumeration</h3>
+          <p class="section-desc">Tools for discovering hosts, open ports, running services, and network topology.</p>
+        </div>
+        <div class="grid-auto stagger-children">
+          <div class="tool-card border-cyan"><div class="tool-card-name">🗺 Nmap</div><div class="tool-card-purpose">The definitive network scanner. Host discovery, port scanning, service/version detection, OS fingerprinting, and NSE scripting engine. Used in almost every engagement.</div><div class="tool-tags"><span class="tag">Free / Open Source</span><span class="tag">Linux · Windows · Mac</span><span class="badge badge-beginner">Beginner</span></div></div>
+          <div class="tool-card border-cyan"><div class="tool-card-name">⚡ Masscan</div><div class="tool-card-purpose">The world's fastest TCP port scanner. Sends up to 10 million packets/second. Excellent for scanning large address ranges quickly. Less feature-rich than Nmap.</div><div class="tool-tags"><span class="tag">Free / Open Source</span><span class="tag">Linux</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-cyan"><div class="tool-card-name">🔭 Shodan</div><div class="tool-card-purpose">Search engine for internet-connected devices. Find exposed servers, cameras, ICS systems, and services globally. Indispensable for OSINT and external attack surface mapping.</div><div class="tool-tags"><span class="tag">Free / Premium API</span><span class="tag">Web-based</span><span class="badge badge-beginner">Beginner</span></div></div>
+          <div class="tool-card border-cyan"><div class="tool-card-name">🕷 Enum4linux</div><div class="tool-card-purpose">Enumerates Windows/Samba systems — users, shares, password policies, group memberships. Essential for Active Directory reconnaissance.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Linux</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-cyan"><div class="tool-card-name">🗂 CrackMapExec (CME)</div><div class="tool-card-purpose">Swiss army knife for Windows/Active Directory assessments. SMB enumeration, credential testing, command execution, and lateral movement across networks.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Linux</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-cyan"><div class="tool-card-name">🔍 Netdiscover</div><div class="tool-card-purpose">Active/passive ARP scanner for local network host discovery. Great for quickly mapping a LAN during internal assessments.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Linux</span><span class="badge badge-beginner">Beginner</span></div></div>
+          <div class="tool-card border-cyan"><div class="tool-card-name">🦈 Wireshark</div><div class="tool-card-purpose">The world's most popular network protocol analyser. Capture and deep inspect network traffic with 3000+ protocol dissectors. Essential for network forensics and analysis.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Cross-platform</span><span class="badge badge-beginner">Beginner</span></div></div>
+          <div class="tool-card border-cyan"><div class="tool-card-name">🌐 theHarvester</div><div class="tool-card-purpose">OSINT tool for gathering email addresses, domains, hosts, employee names, and open ports from public sources. Great for pre-engagement recon.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Python</span><span class="badge badge-beginner">Beginner</span></div></div>
+          <div class="tool-card border-cyan"><div class="tool-card-name">🔎 Recon-ng</div><div class="tool-card-purpose">Full-featured web reconnaissance framework written in Python. Module-based architecture similar to Metasploit. Automates OSINT collection from dozens of sources.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Python</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-cyan"><div class="tool-card-name">📡 Responder</div><div class="tool-card-purpose">LLMNR, NBT-NS, and MDNS poisoner. Captures NTLMv1/v2 hashes from Windows hosts on the local network. Extremely effective in internal assessments.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Linux</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+        </div>
+      </div>
+
+      <!-- WEB APP -->
+      <div class="tab-panel" data-panel="webapp">
+        <div class="section-header" style="margin-bottom:32px">
+          <h3 class="section-title" style="font-size:28px">Web Application Security</h3>
+          <p class="section-desc">Tools for testing web applications, APIs, and web services for vulnerabilities.</p>
+        </div>
+        <div class="grid-auto stagger-children">
+          <div class="tool-card border-green"><div class="tool-card-name">🕷 Burp Suite</div><div class="tool-card-purpose">The de facto web application security testing platform. Intercept proxy, scanner, intruder, repeater, sequencer. Community edition is free; Pro adds automated scanner ($449/year).</div><div class="tool-tags"><span class="tag">Free / $449/yr</span><span class="tag">Cross-platform</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-green"><div class="tool-card-name">💉 SQLmap</div><div class="tool-card-purpose">Automated SQL injection detection and exploitation. Supports MySQL, PostgreSQL, MSSQL, Oracle, SQLite. Can dump databases, access file system, and execute commands.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Python</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-green"><div class="tool-card-name">🔫 Gobuster</div><div class="tool-card-purpose">Fast directory/file and DNS brute-forcing tool. Finds hidden web paths, subdomains, and virtual hosts. Written in Go for speed.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Go</span><span class="badge badge-beginner">Beginner</span></div></div>
+          <div class="tool-card border-green"><div class="tool-card-name">🕸 OWASP ZAP</div><div class="tool-card-purpose">Open-source web application scanner. Intercept proxy, active/passive scanner, fuzzer, and spider. Free alternative to Burp Pro with automation API.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Java</span><span class="badge badge-beginner">Beginner</span></div></div>
+          <div class="tool-card border-green"><div class="tool-card-name">🪝 Nikto</div><div class="tool-card-purpose">Web server scanner that checks for dangerous files, outdated server software, and common vulnerabilities. Quick first-pass scanner for web servers.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Perl</span><span class="badge badge-beginner">Beginner</span></div></div>
+          <div class="tool-card border-green"><div class="tool-card-name">🎭 Evilginx2</div><div class="tool-card-purpose">Man-in-the-middle phishing framework that bypasses 2FA by harvesting session tokens. Used for advanced phishing simulations in red team engagements.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Go</span><span class="badge badge-pro">Pro</span></div></div>
+          <div class="tool-card border-green"><div class="tool-card-name">🐝 ffuf</div><div class="tool-card-purpose">Fast web fuzzer written in Go. Used for directory discovery, parameter fuzzing, subdomain enumeration, and header injection testing.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Go</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-green"><div class="tool-card-name">🔐 JWT_Tool</div><div class="tool-card-purpose">Test and exploit JSON Web Token vulnerabilities — algorithm confusion, weak secrets, injection attacks. Essential for modern API security testing.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Python</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+        </div>
+      </div>
+
+      <!-- EXPLOITATION -->
+      <div class="tab-panel" data-panel="exploit">
+        <div class="section-header" style="margin-bottom:32px">
+          <h3 class="section-title" style="font-size:28px">Exploitation Frameworks & C2</h3>
+        </div>
+        <div class="grid-auto stagger-children">
+          <div class="tool-card border-red"><div class="tool-card-name">💥 Metasploit Framework</div><div class="tool-card-purpose">The world's most widely used penetration testing framework. 2,000+ exploit modules, payloads, auxiliary modules, post-exploitation. Essential for any security professional.</div><div class="tool-tags"><span class="tag">Free / Pro</span><span class="tag">Linux · Windows</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-red"><div class="tool-card-name">📡 Cobalt Strike</div><div class="tool-card-purpose">Commercial adversary simulation platform. Beacon C2, malleable profiles, aggressor scripts. The industry standard for red teams. Expensive but widely used in APT simulation.</div><div class="tool-tags"><span class="tag">Commercial ($3,500/yr)</span><span class="tag">Linux · Windows</span><span class="badge badge-pro">Pro</span></div></div>
+          <div class="tool-card border-red"><div class="tool-card-name">🌐 Sliver</div><div class="tool-card-purpose">Open-source C2 framework from BishopFox. TLS, HTTP/S, DNS, and WireGuard C2 channels. Modern Cobalt Strike alternative with active development.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Go</span><span class="badge badge-pro">Pro</span></div></div>
+          <div class="tool-card border-red"><div class="tool-card-name">👹 Havoc Framework</div><div class="tool-card-purpose">Modern red team C2 framework with Demon agent. Supports BOFs, sleep obfuscation, process injection, and custom profiles. Growing alternative to Cobalt Strike.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">C / Python</span><span class="badge badge-pro">Pro</span></div></div>
+          <div class="tool-card border-red"><div class="tool-card-name">🩸 BloodHound</div><div class="tool-card-purpose">Graph-based Active Directory attack path visualisation. Find shortest path to Domain Admin, identify attack paths, and prioritise remediations. With SharpHound collector.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Windows</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-red"><div class="tool-card-name">🥷 Mimikatz</div><div class="tool-card-purpose">Extracts credentials from Windows memory — NTLM hashes, plaintext passwords, Kerberos tickets. The most impactful Windows credential tool ever created.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Windows</span><span class="badge badge-pro">Pro</span></div></div>
+          <div class="tool-card border-red"><div class="tool-card-name">⚙️ Impacket</div><div class="tool-card-purpose">Python library for working with network protocols. psexec.py, wmiexec.py, secretsdump.py, GetUserSPNs.py — essential for AD post-exploitation.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Python</span><span class="badge badge-pro">Pro</span></div></div>
+          <div class="tool-card border-red"><div class="tool-card-name">😈 Evil-WinRM</div><div class="tool-card-purpose">WinRM shell for pentesting and post-exploitation. Supports file upload/download, DLL load, log avoidance, and pass-the-hash authentication.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Ruby</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+        </div>
+      </div>
+
+      <!-- PASSWORDS -->
+      <div class="tab-panel" data-panel="passwords">
+        <div class="section-header" style="margin-bottom:32px">
+          <h3 class="section-title" style="font-size:28px">Password Auditing & Cracking</h3>
+        </div>
+        <div class="grid-auto stagger-children">
+          <div class="tool-card border-amber"><div class="tool-card-name">🔑 Hashcat</div><div class="tool-card-purpose">GPU-accelerated password recovery tool. Supports 350+ hash types. Multiple attack modes: dictionary, brute force, mask, rule-based, combination. The fastest cracker available.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Cross-platform</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-amber"><div class="tool-card-name">🗡 John the Ripper</div><div class="tool-card-purpose">Classic password cracker. Excellent for cracking Unix/Linux shadow files, ZIP archives, PDF passwords, and many other formats. CPU-based, very flexible.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Cross-platform</span><span class="badge badge-beginner">Beginner</span></div></div>
+          <div class="tool-card border-amber"><div class="tool-card-name">💧 Hydra</div><div class="tool-card-purpose">Fast online password brute-forcing tool. Supports 50+ protocols: SSH, RDP, FTP, HTTP, SMTP, SMB, and more. Parallelised for speed.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Linux</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-amber"><div class="tool-card-name">🔓 Medusa</div><div class="tool-card-purpose">Fast, parallel, modular login brute-forcer. Alternative to Hydra. Supports many protocols with a clean module-based architecture.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Linux</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-amber"><div class="tool-card-name">📚 SecLists</div><div class="tool-card-purpose">The most comprehensive collection of wordlists for security testing — passwords, usernames, URLs, fuzzing payloads, and more. Essential companion for any tool.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Cross-platform</span><span class="badge badge-beginner">Beginner</span></div></div>
+          <div class="tool-card border-amber"><div class="tool-card-name">🌊 Spray</div><div class="tool-card-purpose">Password spraying tool targeting Active Directory environments. Sprays a single password against many accounts to avoid lockouts.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Go</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+        </div>
+      </div>
+
+      <!-- FORENSICS -->
+      <div class="tab-panel" data-panel="forensics">
+        <div class="section-header" style="margin-bottom:32px">
+          <h3 class="section-title" style="font-size:28px">Digital Forensics & Incident Response</h3>
+        </div>
+        <div class="grid-auto stagger-children">
+          <div class="tool-card border-purple"><div class="tool-card-name">🔭 Autopsy</div><div class="tool-card-purpose">Open-source digital forensics platform. GUI for disk image analysis, timeline creation, keyword search, and artefact extraction. Great for beginners learning DFIR.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Windows · Linux</span><span class="badge badge-beginner">Beginner</span></div></div>
+          <div class="tool-card border-purple"><div class="tool-card-name">🧠 Volatility</div><div class="tool-card-purpose">Memory forensics framework. Analyse RAM dumps to detect malware, extract processes, network connections, registry hives, and credential material.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Python</span><span class="badge badge-pro">Pro</span></div></div>
+          <div class="tool-card border-purple"><div class="tool-card-name">🦅 Velociraptor</div><div class="tool-card-purpose">Enterprise endpoint forensics and monitoring at scale. Hunt for IOCs across thousands of machines, collect artefacts, and respond rapidly to incidents.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Go</span><span class="badge badge-pro">Pro</span></div></div>
+          <div class="tool-card border-purple"><div class="tool-card-name">🗂 FTK Imager</div><div class="tool-card-purpose">Industry-standard forensic imaging tool. Create and verify forensically sound disk images. View evidence without altering it. Free version is widely used.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Windows</span><span class="badge badge-beginner">Beginner</span></div></div>
+          <div class="tool-card border-purple"><div class="tool-card-name">🔎 Sysinternals Suite</div><div class="tool-card-purpose">Microsoft's essential Windows diagnostic tools — Process Monitor, Process Explorer, Autoruns, TCPView, Strings. Essential for Windows malware analysis and IR.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Windows</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-purple"><div class="tool-card-name">🌐 NetworkMiner</div><div class="tool-card-purpose">Passive network forensic tool. Reconstruct files, images, and credentials from pcap captures. Excellent for network-based forensic investigation.</div><div class="tool-tags"><span class="tag">Free / Pro</span><span class="tag">Windows</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-purple"><div class="tool-card-name">🕵️ KAPE</div><div class="tool-card-purpose">Kroll Artifact Parser and Extractor. Rapid triage tool for collecting and processing forensic artefacts from live systems or images. Extensively used in enterprise IR.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Windows</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-purple"><div class="tool-card-name">📝 Plaso</div><div class="tool-card-purpose">Log2Timeline — generates super timelines from disk images. Parses hundreds of artifact types into a unified chronological view for timeline analysis.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Python</span><span class="badge badge-pro">Pro</span></div></div>
+        </div>
+      </div>
+
+      <!-- SIEM -->
+      <div class="tab-panel" data-panel="siem">
+        <div class="section-header" style="margin-bottom:32px">
+          <h3 class="section-title" style="font-size:28px">SIEM, Monitoring & Detection</h3>
+        </div>
+        <div class="grid-auto stagger-children">
+          <div class="tool-card border-cyan"><div class="tool-card-name">📊 Splunk</div><div class="tool-card-purpose">Industry-leading SIEM and data analytics platform. Powerful SPL query language, hundreds of apps/add-ons. Used by the majority of Fortune 500 security teams.</div><div class="tool-tags"><span class="tag">Free (500MB/day) / Commercial</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-cyan"><div class="tool-card-name">⚡ Elastic SIEM</div><div class="tool-card-purpose">Open-source ELK (Elasticsearch, Logstash, Kibana) stack with built-in security detection rules. Elastic Defend EDR + Fleet for agent management. Highly scalable.</div><div class="tool-tags"><span class="tag">Free (OSS) / Commercial</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-cyan"><div class="tool-card-name">🦠 Snort</div><div class="tool-card-purpose">Open-source IDS/IPS. Rule-based real-time traffic analysis. Developed by Cisco. One of the most deployed network intrusion detection systems globally.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Linux</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-cyan"><div class="tool-card-name">🐦 Zeek (Bro)</div><div class="tool-card-purpose">Network analysis framework generating rich structured logs from network traffic. Used for threat hunting, network forensics, and as a Snort complement.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Linux</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-cyan"><div class="tool-card-name">🐝 TheHive</div><div class="tool-card-purpose">Open-source Security Incident Response Platform (SIRP). Collaborative case management for SOC teams, integrated with MISP and Cortex.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Linux</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-cyan"><div class="tool-card-name">🧠 MISP</div><div class="tool-card-purpose">Malware Information Sharing Platform. Open-source threat intelligence platform for structured sharing of IOCs, TTPs, and threat intel between organisations.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Linux</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-cyan"><div class="tool-card-name">🔵 Security Onion</div><div class="tool-card-purpose">Linux distro for threat hunting, network monitoring, and log management. Bundles Zeek, Suricata, Elasticsearch, and Kibana — a complete NSM stack out of the box.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Linux</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-cyan"><div class="tool-card-name">🟦 Microsoft Sentinel</div><div class="tool-card-purpose">Cloud-native SIEM/SOAR built on Azure. Native M365/Azure integration, KQL query language, automated playbooks via Logic Apps. Rapidly growing in enterprise.</div><div class="tool-tags"><span class="tag">Commercial (Azure)</span><span class="badge badge-pro">Pro</span></div></div>
+        </div>
+      </div>
+
+      <!-- MALWARE -->
+      <div class="tab-panel" data-panel="malware">
+        <div class="section-header" style="margin-bottom:32px">
+          <h3 class="section-title" style="font-size:28px">Malware Analysis & Reverse Engineering</h3>
+        </div>
+        <div class="grid-auto stagger-children">
+          <div class="tool-card border-purple"><div class="tool-card-name">👻 Ghidra</div><div class="tool-card-purpose">NSA's free, open-source reverse engineering suite. Disassembler, decompiler, scripting (Python/Java), multi-architecture support. Rivals IDA Pro at no cost.</div><div class="tool-tags"><span class="tag">Free / NSA</span><span class="tag">Cross-platform</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-purple"><div class="tool-card-name">🔭 IDA Pro</div><div class="tool-card-purpose">Industry-standard interactive disassembler and debugger. 30+ years of development. Hex-Rays decompiler is the gold standard. Very expensive but irreplaceable in serious RE work.</div><div class="tool-tags"><span class="tag">Commercial (~$1,700+)</span><span class="badge badge-pro">Pro</span></div></div>
+          <div class="tool-card border-purple"><div class="tool-card-name">🐛 x64dbg</div><div class="tool-card-purpose">Open-source x64/x32 debugger for Windows. Modern interface, plugin ecosystem, excellent for dynamic malware analysis and patch analysis.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Windows</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-purple"><div class="tool-card-name">🥚 Cuckoo Sandbox</div><div class="tool-card-purpose">Automated malware analysis sandbox. Execute suspicious files and observe behaviour — network connections, file system changes, registry modifications, API calls.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Linux</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-purple"><div class="tool-card-name">🌐 ANY.RUN</div><div class="tool-card-purpose">Interactive online malware sandbox. Run suspicious files in a browser, interact with them live, and see behavioural analysis instantly. Free tier available.</div><div class="tool-tags"><span class="tag">Free / Premium</span><span class="tag">Web-based</span><span class="badge badge-beginner">Beginner</span></div></div>
+          <div class="tool-card border-purple"><div class="tool-card-name">🔥 FLARE VM</div><div class="tool-card-purpose">Windows-based security distribution for malware analysis and reverse engineering. Installs 100+ RE tools automatically on Windows.</div><div class="tool-tags"><span class="tag">Free / FireEye</span><span class="tag">Windows</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-purple"><div class="tool-card-name">🦠 VirusTotal</div><div class="tool-card-purpose">Multi-AV file and URL scanner. 70+ antivirus engines, YARA rules, behavioural analysis, and community comments. First stop for analysing suspicious files.</div><div class="tool-tags"><span class="tag">Free / Enterprise</span><span class="tag">Web-based</span><span class="badge badge-beginner">Beginner</span></div></div>
+          <div class="tool-card border-purple"><div class="tool-card-name">📝 YARA</div><div class="tool-card-purpose">Pattern matching tool for malware identification. Write rules to detect malware families by their byte patterns, strings, or structural characteristics. Used by AV and threat intel teams.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Cross-platform</span><span class="badge badge-pro">Pro</span></div></div>
+        </div>
+      </div>
+
+      <!-- WIRELESS -->
+      <div class="tab-panel" data-panel="wireless">
+        <div class="section-header" style="margin-bottom:32px">
+          <h3 class="section-title" style="font-size:28px">Wireless Security</h3>
+        </div>
+        <div class="grid-auto stagger-children">
+          <div class="tool-card border-pink"><div class="tool-card-name">📡 Aircrack-ng</div><div class="tool-card-purpose">Complete suite for assessing WiFi network security. Packet capture, WEP/WPA cracking, replay attacks, and de-authentication. The essential wireless security toolkit.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Linux</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-pink"><div class="tool-card-name">🐱 Wireshark + WiFi</div><div class="tool-card-purpose">Capture and analyse wireless traffic with Wireshark. Requires monitor mode capable adapter. Decrypt WPA traffic with known key for educational analysis.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Linux</span><span class="badge badge-beginner">Beginner</span></div></div>
+          <div class="tool-card border-pink"><div class="tool-card-name">🍯 WiFi Pineapple</div><div class="tool-card-purpose">Hardware/software platform for WiFi security auditing. Rogue AP, evil twin, reconnaissance, and MiTM attacks. Popular for physical red team engagements.</div><div class="tool-tags"><span class="tag">Commercial (~$100)</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-pink"><div class="tool-card-name">🐝 Bettercap</div><div class="tool-card-purpose">Complete MiTM framework for network reconnaissance and attacks — ARP spoofing, WiFi deauth, BLE sniffing, HTTP proxy, credential harvesting.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Linux · Mac</span><span class="badge badge-intermediate">Intermediate</span></div></div>
+          <div class="tool-card border-pink"><div class="tool-card-name">🔓 Hashcat + Hcxtools</div><div class="tool-card-purpose">Hcxdumptool/hcxtools captures WPA PMKID hashes from WiFi networks without de-authentication. Feed hashes to Hashcat for offline cracking.</div><div class="tool-tags"><span class="tag">Free</span><span class="tag">Linux</span><span class="badge badge-pro">Pro</span></div></div>
+          <div class="tool-card border-pink"><div class="tool-card-name">📻 SDR (Software Defined Radio)</div><div class="tool-card-purpose">RTL-SDR dongle ($30) + GQRX/SDR# for analysing radio frequencies — RF recon, listening to unencrypted communications, replay attacks against keyfobs/433MHz devices.</div><div class="tool-tags"><span class="tag">Free + ~$30 hardware</span><span class="badge badge-pro">Pro</span></div></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── Distros ─────────────────────────────────────── -->
+  <section class="section">
+    <div class="section-header fade-up">
+      <div class="section-label">Operating Systems</div>
+      <h2 class="section-title">Security Linux Distributions</h2>
+      <p class="section-desc">Specialised Linux distributions purpose-built for security work.</p>
+    </div>
+    <div class="grid-auto-sm stagger-children">
+      <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-red">🐉</div><span class="badge badge-beginner">Beginner</span></div><div class="resource-card-title">Kali Linux</div><div class="resource-card-desc">The most popular pentesting distro. 600+ pre-installed tools covering every discipline. Maintained by Offensive Security. The industry standard for offensive work.</div><a href="https://kali.org" class="resource-card-link">kali.org →</a></div>
+      <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-cyan">🦜 </div><span class="badge badge-beginner">Beginner</span></div><div class="resource-card-title">Parrot OS</div><div class="resource-card-desc">Lightweight security distro — great for older hardware. Includes both offensive and forensics tools. Privacy-focused with a clean desktop environment.</div><a href="https://parrotsec.org" class="resource-card-link">parrotsec.org →</a></div>
+      <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-blue">🔵</div><span class="badge badge-intermediate">Intermediate</span></div><div class="resource-card-title">Security Onion</div><div class="resource-card-desc">NSM/blue team distro bundling Zeek, Suricata, Elasticsearch, and Kibana. Perfect for building a home SOC lab for detection and monitoring practice.</div><a href="https://securityonionsolutions.com" class="resource-card-link">securityonionsolutions.com →</a></div>
+      <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-purple">🔥</div><span class="badge badge-intermediate">Intermediate</span></div><div class="resource-card-title">FLARE VM (Windows)</div><div class="resource-card-desc">Windows-based malware analysis distro from FireEye/Mandiant. Installs RE tools (Ghidra, x64dbg, IDA Free) automatically on a Windows VM.</div><a href="https://github.com/mandiant/flare-vm" class="resource-card-link">github.com →</a></div>
+      <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-green">🌿</div><span class="badge badge-intermediate">Intermediate</span></div><div class="resource-card-title">REMnux</div><div class="resource-card-desc">Linux distro for malware analysis. Hundreds of analysis tools — disassemblers, hex editors, network tools — curated specifically for malware reverse engineering.</div><a href="https://remnux.org" class="resource-card-link">remnux.org →</a></div>
+      <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-amber">🦁</div><span class="badge badge-intermediate">Intermediate</span></div><div class="resource-card-title">Tails OS</div><div class="resource-card-desc">Privacy and anonymity-focused live OS. Routes all traffic through Tor, leaves no trace. Used by journalists, whistleblowers, and privacy-conscious professionals.</div><a href="https://tails.boum.org" class="resource-card-link">tails.boum.org →</a></div>
+    </div>
+  </section>
+
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

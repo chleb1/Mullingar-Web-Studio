@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Topics — CyberHub</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="page-content">
+
+  <div class="page-hero">
+    <div class="hero-eyebrow"><span class="dot" style="background:var(--accent-purple)"></span>Elite Knowledge</div>
+    <h1 class="page-hero-title"><span class="gradient-text">Advanced</span><br>Cybersecurity Topics</h1>
+    <p class="page-hero-desc">For practitioners ready to go deeper. Malware analysis, reverse engineering, zero-day research, cloud security, and advanced adversary simulation.</p>
+    <span class="badge badge-pro" style="font-size:13px;padding:6px 16px">⚡ Professional Level</span>
+  </div>
+
+  <!-- ─── Malware Analysis ─────────────────────────── -->
+  <section class="section" style="padding-top:0">
+    <div class="section-header fade-up">
+      <div class="section-label">Discipline</div>
+      <h2 class="section-title">Malware Analysis</h2>
+    </div>
+    <div class="grid-2">
+      <div class="glass-card no-hover" style="padding:32px">
+        <h3 style="font-size:17px;font-weight:800;margin-bottom:14px;color:var(--accent-cyan)">Analysis Approaches</h3>
+        <div style="display:flex;flex-direction:column;gap:16px">
+          <div>
+            <div style="font-weight:700;margin-bottom:6px;font-size:15px">Static Analysis</div>
+            <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">Examining malware without executing it. File hashing, string extraction, import table analysis, disassembly with IDA Pro or Ghidra. Reveals capabilities, IOCs, and code structure.</p>
+          </div>
+          <div class="divider" style="margin:4px 0"></div>
+          <div>
+            <div style="font-weight:700;margin-bottom:6px;font-size:15px">Dynamic Analysis</div>
+            <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">Running malware in a controlled sandbox environment. Observe file system changes, network connections, registry modifications, and process behaviour. Tools: Cuckoo Sandbox, ANY.RUN, FlareVM.</p>
+          </div>
+          <div class="divider" style="margin:4px 0"></div>
+          <div>
+            <div style="font-weight:700;margin-bottom:6px;font-size:15px">Code Reversing</div>
+            <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">Decompiling, disassembling, and debugging to fully understand what malware does. x86/x64 Assembly knowledge required. Tools: IDA Pro, Ghidra, x64dbg, dnSpy (.NET).</p>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div class="info-panel border-purple">
+          <h4 style="font-weight:700;margin-bottom:10px;color:var(--accent-purple)">Malware Analysis Toolkit</h4>
+          <ul class="styled-list">
+            <li><strong>Ghidra</strong> — NSA's free reverse engineering suite</li>
+            <li><strong>IDA Pro</strong> — Industry-standard disassembler/debugger</li>
+            <li><strong>x64dbg</strong> — Open-source x64/x32 debugger</li>
+            <li><strong>Cuckoo Sandbox</strong> — Automated malware analysis</li>
+            <li><strong>FLOSS</strong> — FireEye string extraction from malware</li>
+            <li><strong>PEiD / DIE</strong> — Detect packers and protectors</li>
+            <li><strong>VirusTotal</strong> — Multi-AV scanning + behavioural analysis</li>
+            <li><strong>FlareVM</strong> — Windows-based malware analysis distro</li>
+          </ul>
+        </div>
+        <div class="info-panel border-cyan">
+          <h4 style="font-weight:700;margin-bottom:8px;color:var(--accent-cyan)">Common Malware Families</h4>
+          <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">Study real samples: Emotet (loader), TrickBot (banking trojan), Cobalt Strike (C2 framework), Mimikatz (credential dumper), WannaCry (ransomware). Malware Bazaar provides free samples in safe formats.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Reverse Engineering ─────────────────────── -->
+  <section class="section">
+    <div class="section-header fade-up">
+      <div class="section-label">Discipline</div>
+      <h2 class="section-title">Reverse Engineering</h2>
+      <p class="section-desc">The art of understanding how software works without access to source code — fundamental for exploit development and malware analysis.</p>
+    </div>
+    <div class="grid-3 stagger-children">
+      <div class="glass-card" style="padding:26px">
+        <div style="font-size:32px;margin-bottom:12px">📖</div>
+        <h3 style="font-weight:700;margin-bottom:8px">x86/x64 Assembly</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">The language of the CPU. Understanding registers (RAX, RBX, RSP, RBP), stack frames, calling conventions, and common instruction patterns (MOV, PUSH, POP, CALL, JMP, CMP, JE). Non-negotiable for serious RE.</p>
+      </div>
+      <div class="glass-card" style="padding:26px">
+        <div style="font-size:32px;margin-bottom:12px">🔬</div>
+        <h3 style="font-weight:700;margin-bottom:8px">Decompilation vs Disassembly</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">Disassembly converts machine code to assembly. Decompilation lifts to pseudo-C. Modern tools like Ghidra and IDA provide both. For .NET/Java, tools like dnSpy or jadx can recover near-source code.</p>
+      </div>
+      <div class="glass-card" style="padding:26px">
+        <div style="font-size:32px;margin-bottom:12px">🐛</div>
+        <h3 style="font-weight:700;margin-bottom:8px">Anti-Analysis Techniques</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">Malware resists analysis through packing, obfuscation, anti-debugging (IsDebuggerPresent, timing checks), VM/sandbox detection, and code encryption. Learn to identify and defeat each technique.</p>
+      </div>
+      <div class="glass-card" style="padding:26px">
+        <div style="font-size:32px;margin-bottom:12px">🔓</div>
+        <h3 style="font-weight:700;margin-bottom:8px">License Cracking (for Research)</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">Analysing software protection mechanisms — serial number algorithms, licence checks, packing. Excellent for building RE skills on crackme challenges (crackmes.one). Never apply to production software.</p>
+      </div>
+      <div class="glass-card" style="padding:26px">
+        <div style="font-size:32px;margin-bottom:12px">💻</div>
+        <h3 style="font-weight:700;margin-bottom:8px">Firmware Analysis</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">Extracting and reversing embedded device firmware. Binwalk for extraction, QEMU for emulation. Critical for IoT security research. Growing field as IoT devices proliferate.</p>
+      </div>
+      <div class="glass-card" style="padding:26px">
+        <div style="font-size:32px;margin-bottom:12px">📱</div>
+        <h3 style="font-weight:700;margin-bottom:8px">Mobile App Reversing</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">Android APKs (jadx, apktool, Frida) and iOS IPAs (class-dump, Hopper). Mobile banking trojans, spyware, and certificate pinning bypass are key areas of mobile security research.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Exploit Development ─────────────────────── -->
+  <section class="section">
+    <div class="section-header fade-up">
+      <div class="section-label">Discipline</div>
+      <h2 class="section-title">Exploit Development</h2>
+    </div>
+    <div class="grid-2">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div class="glass-card no-hover" style="padding:26px">
+          <h3 style="font-weight:700;margin-bottom:12px;color:var(--accent-red)">Memory Corruption Vulnerabilities</h3>
+          <ul class="styled-list">
+            <li><strong>Buffer Overflow (Stack-based):</strong> Overwriting return address to redirect execution</li>
+            <li><strong>Heap Overflow:</strong> Corrupting heap metadata for code execution</li>
+            <li><strong>Use-After-Free:</strong> Accessing freed memory — UAFs are a major class of browser bugs</li>
+            <li><strong>Format String:</strong> Exploiting %n/%s format specifiers for arbitrary write</li>
+            <li><strong>Integer Overflow:</strong> Wrapping integer values to cause allocation errors</li>
+          </ul>
+        </div>
+        <div class="glass-card no-hover" style="padding:26px">
+          <h3 style="font-weight:700;margin-bottom:12px;color:var(--accent-amber)">Exploitation Mitigations (and bypasses)</h3>
+          <ul class="styled-list">
+            <li><strong>ASLR</strong> — Address Space Layout Randomisation → info leak bypass</li>
+            <li><strong>DEP/NX</strong> — Data Execution Prevention → ROP chains</li>
+            <li><strong>Stack Canaries</strong> — Detect stack overflows → info leak bypass</li>
+            <li><strong>CFG</strong> — Control Flow Guard → still active research area</li>
+            <li><strong>RELRO</strong> — Relocation Read-Only → GOT overwrite difficulty</li>
+          </ul>
+        </div>
+      </div>
+      <div class="glass-card no-hover" style="padding:28px">
+        <h3 style="font-weight:700;margin-bottom:14px;color:var(--accent-purple)">Exploit Development Resources</h3>
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <div class="info-panel" style="padding:16px">
+            <div style="font-weight:700;margin-bottom:6px;font-size:14px">pwn.college</div>
+            <p style="font-size:13px;color:var(--text-secondary)">Free binary exploitation training from Arizona State University. Structured curriculum from stack overflows to heap exploitation.</p>
+            <a href="https://pwn.college" class="resource-card-link" style="font-size:12px;margin-top:6px">pwn.college →</a>
+          </div>
+          <div class="info-panel" style="padding:16px">
+            <div style="font-weight:700;margin-bottom:6px;font-size:14px">exploit.education (Phoenix)</div>
+            <p style="font-size:13px;color:var(--text-secondary)">Practical exploit development exercises — stack overflows, format strings, heap — with explanations.</p>
+            <a href="https://exploit.education" class="resource-card-link" style="font-size:12px;margin-top:6px">exploit.education →</a>
+          </div>
+          <div class="info-panel" style="padding:16px">
+            <div style="font-weight:700;margin-bottom:6px;font-size:14px">OSCP / OSED</div>
+            <p style="font-size:13px;color:var(--text-secondary)">OffSec's OSED (Windows User Mode Exploit Development) is the gold standard for exploit dev certification.</p>
+            <a href="https://offensive-security.com" class="resource-card-link" style="font-size:12px;margin-top:6px">offensive-security.com →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Threat Intelligence & APTs ─────────────── -->
+  <section class="section">
+    <div class="section-header fade-up">
+      <div class="section-label">Intelligence</div>
+      <h2 class="section-title">APTs & Threat Intelligence</h2>
+    </div>
+    <div class="grid-3 stagger-children">
+      <div class="glass-card" style="padding:24px">
+        <div style="font-size:32px;margin-bottom:12px">🎭</div>
+        <h3 style="font-weight:700;margin-bottom:8px">Nation-State Actors</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">APT28/Fancy Bear (Russia), APT41 (China), Lazarus Group (North Korea), Charming Kitten (Iran). Study their TTPs using MITRE ATT&CK groups. Each has distinct tooling, targets, and operational patterns.</p>
+      </div>
+      <div class="glass-card" style="padding:24px">
+        <div style="font-size:32px;margin-bottom:12px">📡</div>
+        <h3 style="font-weight:700;margin-bottom:8px">Threat Intelligence Lifecycle</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">Planning → Collection → Processing → Analysis → Dissemination → Feedback. Structured intelligence production for executive, tactical, and operational consumers. STIX/TAXII for sharing.</p>
+      </div>
+      <div class="glass-card" style="padding:24px">
+        <div style="font-size:32px;margin-bottom:12px">🔎</div>
+        <h3 style="font-weight:700;margin-bottom:8px">IOC Hunting</h3>
+        <p style="font-size:13.5px;color:var(--text-secondary);line-height:1.6">Indicators of Compromise — IP addresses, domains, file hashes, mutexes, registry keys. Tools: VirusTotal, Shodan, Censys, URLhaus, Greynoise. Balance breadth (IoCs) with TTPs (longer shelf life).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Cloud & Modern Attack Surfaces ─────────── -->
+  <section class="section">
+    <div class="section-header fade-up">
+      <div class="section-label">Modern Attack Surfaces</div>
+      <h2 class="section-title">Cloud, Container & Mobile Security</h2>
+    </div>
+    <div class="grid-3 stagger-children">
+      <div class="glass-card border-cyan" style="padding:26px">
+        <div style="font-size:32px;margin-bottom:12px">☁️</div>
+        <h3 style="font-weight:700;margin-bottom:10px">AWS Security</h3>
+        <ul class="styled-list" style="font-size:13px">
+          <li>IAM privilege escalation (200+ escalation paths)</li>
+          <li>S3 bucket misconfigurations</li>
+          <li>IMDS/metadata credential theft</li>
+          <li>Lambda/ECS container escapes</li>
+          <li>Tools: Pacu, CloudFox, ScoutSuite, Prowler</li>
+          <li>Cert: AWS Security Specialty</li>
+        </ul>
+      </div>
+      <div class="glass-card border-purple" style="padding:26px">
+        <div style="font-size:32px;margin-bottom:12px">🐳</div>
+        <h3 style="font-weight:700;margin-bottom:10px">Container Security</h3>
+        <ul class="styled-list" style="font-size:13px">
+          <li>Docker daemon exposure (privileged containers)</li>
+          <li>Kubernetes RBAC misconfigurations</li>
+          <li>Container escapes and host breakout</li>
+          <li>Image scanning for vulnerabilities</li>
+          <li>Tools: Trivy, Falco, kube-bench, CDK</li>
+          <li>Cert: CKS (Certified Kubernetes Security)</li>
+        </ul>
+      </div>
+      <div class="glass-card border-green" style="padding:26px">
+        <div style="font-size:32px;margin-bottom:12px">📱</div>
+        <h3 style="font-weight:700;margin-bottom:10px">Mobile Security</h3>
+        <ul class="styled-list" style="font-size:13px">
+          <li>Android: APK analysis, Frida instrumentation, ADB</li>
+          <li>iOS: jailbreak analysis, class-dump, SSL pinning bypass</li>
+          <li>OWASP Mobile Top 10</li>
+          <li>Mobile malware analysis</li>
+          <li>Tools: MobSF, Objection, apktool, jadx</li>
+          <li>Cert: GMOB (GIAC Mobile)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Pro Resources ───────────────────────────── -->
+  <section class="section">
+    <div class="section-header fade-up">
+      <div class="section-label">Learning Resources</div>
+      <h2 class="section-title">Advanced Resources</h2>
+    </div>
+    <div class="grid-auto stagger-children">
+      <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-purple">🏆</div><span class="badge badge-pro">Pro</span></div><div class="resource-card-title">Malware Traffic Analysis</div><div class="resource-card-desc">Brad Duncan's free site with real pcap captures from malware infections. Practice analysing live malicious traffic. Essential for detection engineers and analysts.</div><a href="https://malware-traffic-analysis.net" class="resource-card-link">malware-traffic-analysis.net →</a></div>
+      <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-purple">📖</div><span class="badge badge-pro">Pro</span></div><div class="resource-card-title">Practical Malware Analysis</div><div class="resource-card-desc">Sikorski & Honig. The definitive textbook for malware analysis — static analysis, dynamic analysis, anti-analysis techniques. Essential reading for the field.</div></div>
+      <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-purple">🎓</div><span class="badge badge-pro">Pro</span></div><div class="resource-card-title">SANS FOR610 — Malware Analysis</div><div class="resource-card-desc">The SANS course behind the GREM certification. Expensive but world-class. Teaches static, dynamic, and code-level malware analysis from industry experts.</div><a href="https://sans.org" class="resource-card-link">sans.org →</a></div>
+      <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-purple">🐉</div><span class="badge badge-pro">Pro</span></div><div class="resource-card-title">pwn.college</div><div class="resource-card-desc">Free, structured exploit development curriculum from ASU. Covers binary exploitation, kernel exploitation, and system security research at a research-grade level.</div><a href="https://pwn.college" class="resource-card-link">pwn.college →</a></div>
+      <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-purple">🔬</div><span class="badge badge-pro">Pro</span></div><div class="resource-card-title">Project Zero Blog</div><div class="resource-card-desc">Google Project Zero's blog — cutting-edge vulnerability research, 0-day disclosures, and in-depth technical analysis from elite researchers.</div><a href="https://googleprojectzero.blogspot.com" class="resource-card-link">googleprojectzero.blogspot.com →</a></div>
+      <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-purple">📺</div><span class="badge badge-pro">Pro</span></div><div class="resource-card-title">OALabs — YouTube</div><div class="resource-card-desc">Professional malware analysis tutorials — unpacking, deobfuscation, and full malware deep-dives. Excellent for advancing malware analysis skills.</div><a href="https://youtube.com/@OALabs" class="resource-card-link">youtube.com →</a></div>
+      <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-purple">🎯</div><span class="badge badge-pro">Pro</span></div><div class="resource-card-title">Sektor7 Institute</div><div class="resource-card-desc">Courses in Windows internals, malware development, and AV evasion. Red Teamer's essential resource for understanding EDR evasion and custom implant development.</div><a href="https://institute.sektor7.net" class="resource-card-link">institute.sektor7.net →</a></div>
+      <div class="resource-card"><div class="resource-card-header"><div class="resource-card-icon icon-bg-purple">☁️</div><span class="badge badge-pro">Pro</span></div><div class="resource-card-title">CloudGoat (Rhino Security)</div><div class="resource-card-desc">Intentionally vulnerable AWS environment for practising cloud attack and defence. Hands-on AWS security training that mirrors real-world misconfigurations.</div><a href="https://github.com/RhinoSecurityLabs/cloudgoat" class="resource-card-link">github.com →</a></div>
+    </div>
+  </section>
+
+  <!-- ─── Pro Certs ───────────────────────────────── -->
+  <section class="section">
+    <div class="section-header fade-up">
+      <div class="section-label">Credentials</div>
+      <h2 class="section-title">Advanced Certifications</h2>
+    </div>
+    <div class="grid-3 stagger-children">
+      <div class="cert-card border-purple"><div class="badge badge-pro" style="margin-bottom:12px">Pro</div><div class="cert-name">OSCP</div><div class="cert-issuer">Offensive Security</div><div class="cert-desc">Penetration Testing with Kali Linux. The most respected offensive cert — 24-hour hands-on exam.</div><div class="cert-meta"><div class="cert-meta-item"><div class="cert-meta-label">Cost</div><div class="cert-meta-value">~$1,499</div></div><div class="cert-meta-item"><div class="cert-meta-label">Difficulty</div><div class="cert-meta-value">Very Hard</div></div></div></div>
+      <div class="cert-card border-purple"><div class="badge badge-pro" style="margin-bottom:12px">Pro</div><div class="cert-name">GREM</div><div class="cert-issuer">GIAC / SANS</div><div class="cert-desc">GIAC Reverse Engineering Malware. The top certification for malware analysts. Demonstrates deep RE and analysis skills.</div><div class="cert-meta"><div class="cert-meta-item"><div class="cert-meta-label">Cost</div><div class="cert-meta-value">~$949 + course</div></div><div class="cert-meta-item"><div class="cert-meta-label">Difficulty</div><div class="cert-meta-value">Very Hard</div></div></div></div>
+      <div class="cert-card border-purple"><div class="badge badge-pro" style="margin-bottom:12px">Pro</div><div class="cert-name">GXPN</div><div class="cert-issuer">GIAC / SANS</div><div class="cert-desc">GIAC Exploit Researcher and Advanced Penetration Tester. Expert-level exploit development and research certification.</div><div class="cert-meta"><div class="cert-meta-item"><div class="cert-meta-label">Cost</div><div class="cert-meta-value">~$949 + course</div></div><div class="cert-meta-item"><div class="cert-meta-label">Difficulty</div><div class="cert-meta-value">Expert</div></div></div></div>
+      <div class="cert-card border-purple"><div class="badge badge-pro" style="margin-bottom:12px">Pro</div><div class="cert-name">CISSP</div><div class="cert-issuer">ISC²</div><div class="cert-desc">Gold standard management-level certification. 5-year requirement. Unlocks senior architect, CISO, and director roles.</div><div class="cert-meta"><div class="cert-meta-item"><div class="cert-meta-label">Cost</div><div class="cert-meta-value">~$749</div></div><div class="cert-meta-item"><div class="cert-meta-label">Difficulty</div><div class="cert-meta-value">Hard</div></div></div></div>
+      <div class="cert-card border-purple"><div class="badge badge-pro" style="margin-bottom:12px">Pro</div><div class="cert-name">OSED</div><div class="cert-issuer">Offensive Security</div><div class="cert-desc">Windows User Mode Exploit Development. Part of the OSCE3 trilogy. Deep exploit development skills.</div><div class="cert-meta"><div class="cert-meta-item"><div class="cert-meta-label">Cost</div><div class="cert-meta-value">~$1,499</div></div><div class="cert-meta-item"><div class="cert-meta-label">Difficulty</div><div class="cert-meta-value">Expert</div></div></div></div>
+      <div class="cert-card border-purple"><div class="badge badge-pro" style="margin-bottom:12px">Pro</div><div class="cert-name">AWS Security Specialty</div><div class="cert-issuer">Amazon</div><div class="cert-desc">Advanced AWS security — IAM, logging, incident response, data protection. Essential for cloud security roles.</div><div class="cert-meta"><div class="cert-meta-item"><div class="cert-meta-label">Cost</div><div class="cert-meta-value">~$300</div></div><div class="cert-meta-item"><div class="cert-meta-label">Difficulty</div><div class="cert-meta-value">Hard</div></div></div></div>
+    </div>
+  </section>
+
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

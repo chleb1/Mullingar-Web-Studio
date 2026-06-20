@@ -1,0 +1,16 @@
+{
+  "name": "Ascend Gym Tracker",
+  "short_name": "Ascend",
+  "description": "Personal gym workout tracker with reps, sets, RIR, rest timer, charts and a rank progression system.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#070b14",
+  "theme_color": "#070b14",
+  "categories": ["health", "fitness", "lifestyle"],
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}
